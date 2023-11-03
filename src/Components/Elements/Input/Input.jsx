@@ -1,5 +1,4 @@
-
-export const Input = (props) => {
+const Input = (props) => {
   const { type, placeholder, name } = props;
   return (
     <input
@@ -11,3 +10,5 @@ export const Input = (props) => {
     />
   );
 };
+
+export default Input;
