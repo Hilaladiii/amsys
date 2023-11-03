@@ -1,7 +1,7 @@
 import { Input } from "./Input";
 import { Label } from "./Label";
 
-export const InputForm = (props) => {
+const InputForm = (props) => {
   const { label, name, placeholder,type } = props;
   return (
     <div className="mb-3">
@@ -10,3 +10,5 @@ export const InputForm = (props) => {
     </div>
   );
 };
+
+export default InputForm
