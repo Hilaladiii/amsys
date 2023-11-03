@@ -8,9 +8,12 @@ export default {
     extend: {
       colors: {
         tBlue: "#2984E4"
-      }
+      },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    darkTheme: "light",
+  },
 }
 

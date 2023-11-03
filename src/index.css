@@ -3,11 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
   font-family: Poppins;
-}
-
-body {
-  background: url('/background.mp4');
 }
