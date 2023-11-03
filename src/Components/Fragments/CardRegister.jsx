@@ -2,7 +2,7 @@ import Button from "../Elements/Button/Button"
 import InputForm from "../Elements/Input/Index"
 const CardRegister = () => {
   return (
-    <div className="w-[320px] md:w-[480px] md:h-[520px] 2xl:w-[570px] bg-white rounded-3xl p-10 flex flex-col shadow-2xl mx-auto md:mx-2 mt-5 md:mt-16">
+    <div className="w-[320px] md:w-[480px] md:h-[520px] 2xl:w-[570px] bg-white rounded-3xl p-10 flex flex-col shadow-2xl mx-auto md:mx-2 mt-5 md:mt-16 animate-fade-right animate-duration-1000">
       <div className="flex flex-col mx-auto gap-2 justify-center items-center">
         <h1 className="font-bold text-xl lg:text-2xl">Selamat Datang</h1>
         <p className="text-[#A0A0A0] text-[12px]">Silahkan masukkan data dengan benar</p>
