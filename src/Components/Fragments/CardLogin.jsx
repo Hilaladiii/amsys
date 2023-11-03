@@ -1,5 +1,5 @@
 import Button from "../Elements/Button/Button"
-import InputForm from "../Elements/Input"
+import InputForm from "../Elements/Input/Index"
 
 const CardLogin = () => {
   return (
