@@ -9,8 +9,6 @@ export default {
       colors: {
         tBlue: "#2984E4"
       },
-      animation: {
-      }
     },
   },
   plugins: [require("daisyui"), require('tailwindcss-animated')],

@@ -9,16 +9,15 @@ const Navbar = ({ onLoginClick, onRegisterClick }) => {
 
   const handleOpen = () =>{
     setOpen(!open)
-  }
-  console.log(open)
+  }  
   return (
-    <header className="top-0 left-0 w-full fixed bg-white md:bg-transparent">    
+    <header className="top-0 left-0 w-full fixed bg-white z-50 md:bg-transparent">    
       <nav className="w-full flex flex-row justify-between p-5 lg:p-10 items-center ">      
-          <Link to="/" className="w-[100px] h-[30px] lg:w-[150px] lg:h-[40px] bg-[url('/Images/logo.png')] bg-cover"/>
+          <Link to="/" className="w-[100px] h-[30px] lg:w-[150px] lg:h-[40px] bg-[url('/Images/logo.png')] bg-cover animate-fade delay-150"/>
           <div className="hidden md:flex flex-row gap-5 text-[15px]">
-            <Button classname="bg-none text-white " >Kontak</Button>
-            <Button classname="text-tBlue bg-white"  onClick={onLoginClick}>Masuk</Button>
-            <Button classname="bg-none text-white" onClick={onRegisterClick}>Daftar</Button>        
+            <Button classname="bg-none text-white focus:text-tBlue focus:bg-white animate-fade-right animate-delay-100" >Kontak</Button>
+            <Button classname="bg-none text-white focus:text-tBlue focus:bg-white animate-fade-right animate-delay-200"  onClick={onLoginClick}>Masuk</Button>
+            <Button classname="bg-none text-white focus:text-tBlue focus:bg-white animate-fade-right animate-delay-300" onClick={onRegisterClick}>Daftar</Button>        
           </div>
 
           <button onClick={handleOpen} className="md:hidden">          
