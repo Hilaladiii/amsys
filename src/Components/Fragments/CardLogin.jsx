@@ -21,7 +21,7 @@ const CardLogin = () => {
           type = "password"
           placeholder = "Masukkan kata sandi"
         />
-        <Button classname='font-normal bg-tBlue text-white text-[12px] lg:text-[15px] 2xl:text-[18px] mt-2'>Masuk</Button>        
+        <Button classname='font-normal bg-tBlue text-white text-[12px] lg:text-[15px] 2xl:text-[18px] mt-2 lg:mt-5'>Masuk</Button>        
       </div>
       
 
