@@ -8,7 +8,7 @@ const DashboardPage = () => {
   return (
     <div className="w-full h-screen bg-[url('/Images/BackgroundDashboard.svg')] bg-no-repeat bg-cover flex flex-col justify-center">      
       <Navbar />  
-      
+      <Link to={'/dashboard'}>to dashboard</Link>
     </div>
   )
 }
