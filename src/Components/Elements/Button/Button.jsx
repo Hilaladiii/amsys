@@ -1,5 +1,5 @@
 const Button = (props) => {
-  const { children = "...", classname = "bg-white", onClick, } = props;
+  const { children = "", classname = "bg-white", onClick, } = props;
   return (
     <button
       onClick={onClick}
