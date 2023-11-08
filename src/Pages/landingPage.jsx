@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom"
 import Button from "../Components/Elements/Button/Button"
 import CardLogin from "../Components/Fragments/CardLogin"
 import CardRegister from "../Components/Fragments/CardRegister"
@@ -27,6 +28,8 @@ const LandingPage = () => {
         }        
         <div className="mb-[50px]"></div>        
       </div>
+
+      <Link to={'/dashboard'}>to dashboard</Link>
 
     </div>
   )
