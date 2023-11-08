@@ -15,14 +15,14 @@ const Navbar = ({ onLoginClick, onRegisterClick }) => {
       {
         pathName === '/' 
           ? 
-            <AuthNavbar onLoginClick={onLoginClick} onRegisterClick={onRegisterClick} handleOpen={handleOpen}/> 
-          : <DashboardNavbar />
+            <AuthNavbar onLoginClick={onLoginClick} onRegisterClick={onRegisterClick} handleOpen={handleOpen} isOpen={open}/> 
+          : <DashboardNavbar handleOpen={handleOpen} isOpen={open}/>
       }
     </header>
   )
 }
 
-const AuthNavbar = ({onLoginClick, onRegisterClick, handleOpen}) =>{
+const AuthNavbar = ({onLoginClick, onRegisterClick, handleOpen, isOpen}) =>{
   
   return(
     <>
@@ -40,7 +40,7 @@ const AuthNavbar = ({onLoginClick, onRegisterClick, handleOpen}) =>{
 
       </nav>
           {
-            open &&
+            isOpen &&
             <div className="w-full p-10 bg-tBlue md:hidden">
               <div className="w-50% flex flex-col gap-3">
                 <Button>Kontak</Button>
@@ -54,7 +54,7 @@ const AuthNavbar = ({onLoginClick, onRegisterClick, handleOpen}) =>{
   )
 }
 
-const DashboardNavbar = ({handleOpen}) =>{
+const DashboardNavbar = ({handleOpen, isOpen}) =>{
  
   return(
     <>
@@ -71,7 +71,7 @@ const DashboardNavbar = ({handleOpen}) =>{
 
       </nav>
           {
-            open &&
+            isOpen &&
             <div className="w-full p-10 bg-tBlue md:hidden">
               <div className="w-50% flex flex-col gap-3">
                 <Button>Hubungkan Akun Mahasiswa</Button>               
