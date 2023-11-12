@@ -1,12 +1,10 @@
 {
+  "static": {
+    "directory": "src/assets"
+  },
   "routes": [
     {
       "src": "/[^.]+",
-      "dest": "/",
-      "status": 200
-    },
-    {
-      "src": "./assets/images/*",
       "dest": "/",
       "status": 200
     }
