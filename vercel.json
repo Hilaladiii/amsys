@@ -1,7 +1,4 @@
 {
-  "static": {
-    "directory": "/src/assets"
-  },
   "routes": [
     {
       "src": "/[^.]+",
