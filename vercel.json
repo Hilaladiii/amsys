@@ -5,5 +5,8 @@
       "dest": "/",
       "status": 200
     }
+  ],
+  "files": [
+    "/src/assets/**/*"
   ]
 }
