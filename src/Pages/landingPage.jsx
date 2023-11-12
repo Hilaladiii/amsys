@@ -28,8 +28,7 @@ const LandingPage = () => {
         }        
         <div className="mb-[50px]"></div>        
       </div>
-
-      <Link to={'/dashboard'}>to dashboard</Link>
+      
 
     </div>
   )
