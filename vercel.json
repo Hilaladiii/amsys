@@ -4,6 +4,11 @@
       "src": "/[^.]+",
       "dest": "/",
       "status": 200
+    },
+    {
+      "src": "./assets/images/.*",
+      "dest": "/$0",
+      "status": 200
     }
   ]
 }
