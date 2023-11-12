@@ -15,7 +15,7 @@ const LandingPage = () => {
     setIsCardLogin(false);
   }
   return (
-    <div className="w-full h-screen bg-[url('/Images/BackgroundLanding.svg')] bg-no-repeat bg-cover flex flex-col justify-center">
+    <div className="w-full h-screen bg-[url('./assets/images/BackgroundLanding.svg')] bg-no-repeat bg-cover flex flex-col justify-center">
       <Navbar onLoginClick={handleLoginClick} onRegisterClick={handleRegisterClick} />
       <div className="flex flex-col items-center md:flex-row md:justify-between mx-[6%] ">
         <div className="flex flex-col gap-3 mt-[90%] md:mt-[10%] justify-center">
