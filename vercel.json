@@ -6,7 +6,7 @@
       "status": 200
     },
     {
-      "src": "./assets/images/.*",
+      "src": "./assets/images/*",
       "dest": "/$0",
       "status": 200
     }
