@@ -12,9 +12,9 @@ const DashboardPage = () => {
         <p className="w-[40%] text-[12px] md:text-[15px] 2xl:text-[18px] font-medium animate-fade animate-delay-300">Dapatkan akses real-time untuk memantau nilai, kehadiran dan tugas anak Anda secara terperinci.</p>
       </div>
       <div className="w-full flex flex-row px-36 mt-20 animate-fade-right">
-        <CardMain title={'Kemahasiswaan'} content={["Hubungi Dosen Pembimbing Akademik","Kartu Hasil Studi dan Evaluasi"]} image="./assets/images/kemahasiswaan.png"/>
-        <CardMain title={'Akademik'} content={["Statistik IPK","Jadwal Kuliah","KHS Evaluasi","Kehadiran"]} image="./assets/images/akademik.png"/>
-        <CardMain title={'Informasi'} content={["Akademik","Kalender Akademik","Biaya","Terkini"]}  image="./assets/images/informasi.png"/>
+        <CardMain title={'Kemahasiswaan'} content={["Hubungi Dosen Pembimbing Akademik","Kartu Hasil Studi dan Evaluasi"]} images="kemahasiswaan.png"/>
+        <CardMain title={'Akademik'} content={["Statistik IPK","Jadwal Kuliah","KHS Evaluasi","Kehadiran"]} images="akademik.png"/>
+        <CardMain title={'Informasi'} content={["Akademik","Kalender Akademik","Biaya","Terkini"]}  images="informasi.png"/>
       </div>
     </div>
   )
