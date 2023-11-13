@@ -1,11 +1,10 @@
-import { Link, useHref } from "react-router-dom"
+import { Link } from "react-router-dom"
 import Button from "../Elements/Button/Button"
 import Hamburger from "../Elements/Button/Hamburger"
 import { useState } from "react"
 
 
-const Navbar = ({ onLoginClick, onRegisterClick }) => {
-  const pathName = useHref() 
+const Navbar = ({ onLoginClick, onRegisterClick, types }) => {  
   const [open, setOpen] = useState(false)
   const handleOpen = () =>{
     setOpen(!open)
@@ -13,10 +12,10 @@ const Navbar = ({ onLoginClick, onRegisterClick }) => {
   return (
     <header className="top-0 left-0 w-full fixed bg-white z-50 md:bg-transparent">    
       {
-        pathName === '/' 
+        types === 'auth-navbar' 
           ? 
             <AuthNavbar onLoginClick={onLoginClick} onRegisterClick={onRegisterClick} handleOpen={handleOpen} isOpen={open}/> 
-          : <DashboardNavbar handleOpen={handleOpen} isOpen={open}/>
+          : types ==='dashboard-navbar' ? <DashboardNavbar handleOpen={handleOpen} isOpen={open}/> : <NavbarLeft/>
       }
     </header>
   )
@@ -62,7 +61,7 @@ const DashboardNavbar = ({handleOpen, isOpen}) =>{
           <Link to="/" className="w-[100px] h-[30px] lg:w-[150px] lg:h-[40px] bg-[url('./assets/images/logo.png')] bg-cover animate-fade delay-150"/>
           <div className="hidden md:flex flex-row items-center text-[15px] 2xl:text-[18px]">
             <Button classname="bg-none text-tBlue font-bold animate-fade-right animate-delay-100" >Hubungkan Akun Mahasiswa</Button> 
-            <Link className="bg-tBlue w-[65px] h-[35px] flex flex-row justify-center items-center rounded-2xl p-1 animate-fade-right animate-delay-150"> <div className="w-[60%] h-[60%] bg-[url('./assets/icons/icon-arrow.svg')] bg-cover bg-no-repeat bg-center"></div></Link>
+            <Link className="bg-tBlue w-[65px] h-[35px] flex flex-row justify-center items-center rounded-2xl p-1 animate-fade-right animate-delay-150"> <div className="w-[60%] h-[60%] bg-[url('./assets/icons/icon-arrow.svg')] bg-cover bg-no-repeat bg-center animate"></div></Link>
           </div>
 
           <button onClick={handleOpen} className="md:hidden">          
@@ -82,6 +81,29 @@ const DashboardNavbar = ({handleOpen, isOpen}) =>{
     </>
   )
 }
+
+const NavbarLeft = () =>{
+  return(
+    <nav className="w-[30%] flex flex-col justify-between text-[15px]">
+      <div>
+        <div/>
+        <span>Beranda</span>
+      </div>
+      <div>
+        <div/>
+        <span>Akademik</span>
+      </div>
+      <div>
+        <div/>
+        <span>Kemahasiswaan</span>
+      </div>
+      <div>
+        <div/>
+        <span>Informasi</span>
+      </div>
+    </nav>
+  )
+}   
 
 
 
