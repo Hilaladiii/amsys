@@ -12,9 +12,9 @@ const DashboardPage = () => {
         <p className="w-[60%] md:w-[40%] text-[12px] md:text-[15px] 2xl:text-[18px] font-medium animate-fade animate-delay-300">Dapatkan akses real-time untuk memantau nilai, kehadiran dan tugas anak Anda secara terperinci.</p>
       </div>
       <div className="w-full flex flex-col md:flex-row justify-between items-center px-36 mt-20 mb-10 animate-fade-right">
-        <CardMain title={'Kemahasiswaan'} imageUrl="https://amsys.vercel.app/images/kemahasiswaan.png" content={["Hubungi Dosen Pembimbing Akademik","Kartu Hasil Studi dan Evaluasi"]}/>
+        <CardMain title={'Kemahasiswaan'} imageUrl="https://amsys.vercel.app/images/kemahasiswaan.png" navigate={""} content={["Hubungi Dosen Pembimbing Akademik","Kartu Hasil Studi dan Evaluasi"]}/>
         <CardMain title={'Akademik'} imageUrl="https://amsys.vercel.app/images/akademik.png" navigate={"/akademik"} content={["Statistik IPK","Jadwal Kuliah","KHS Evaluasi","Kehadiran"]}/>
-        <CardMain title={'Informasi'} imageUrl="https://amsys.vercel.app/images/informasi.png" content={["Akademik","Kalender Akademik","Biaya","Terkini"]}/>
+        <CardMain title={'Informasi'} imageUrl="https://amsys.vercel.app/images/informasi.png" navigate={""} content={["Akademik","Kalender Akademik","Biaya","Terkini"]}/>
       </div>      
     </div>
   )
