@@ -86,8 +86,8 @@ const DashboardNavbar = ({handleOpen, isOpen}) =>{
 const NavbarTop = ({handleOpen, isOpen}) =>{
   return(
     <>
-      <nav className="w-full flex flex-row justify-between px-20 py-7 items-center shadow-md z-50 bg-white"> 
-          <div className="flex flex-row justify-between items-center gap-32">
+      <nav className="w-full flex flex-row justify-between px-5 md:px-16 lg:px-20 py-7 items-center shadow-md z-50 bg-white"> 
+          <div className="flex flex-row justify-between items-center gap-3 lg:gap-32">
             <Link to="/" className="w-[100px] h-[30px] lg:w-[110px] lg:h-[38px] bg-[url('./assets/images/logo.png')] bg-cover bg-center animate-fade-right delay-150"/>
             <div className="flex flex-row justify-center items-center gap-2 animate-fade-right animate-delay-200">
               <div className="w-[40px] h-[40px] bg-[url('https://amsys.vercel.app/images/akademik.png')] bg-contain bg-no-repeat bg-center"/>
@@ -120,7 +120,7 @@ const NavbarTop = ({handleOpen, isOpen}) =>{
 
 const NavbarLeft = () =>{
   return(
-    <nav className="w-[20%] h-[84vh] flex flex-col justify-center gap-3 text-[15px] px-4 py-4 font-medium shadow-md">
+    <nav className="hidden md:w-[20%] md:h-[84vh] lg:flex flex-col justify-center gap-3 bg-white text-[15px] px-4 py-4 font-medium shadow-md">
       <div className="flex flex-row items-center gap-3 hover:bg-tBlue animate-fade-right animate-delay-150">
         <div className="w-[25px] h-[25px] bg-[url('./assets/icons/icon-beranda.svg')] bg-contain bg-center bg-no-repeat"/>
         <span>Beranda</span>
