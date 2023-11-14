@@ -19,10 +19,10 @@ const AkademikPage = () => {
       <div className="w-[100vw] h-[50vh] mt-[6%] flex flex-row py-5 gap-4">
         <NavbarLeft/>
         <div className="flex flex-col gap-2">
-          <CardAkademik/> 
-          <CardAkademik/> 
-          <CardAkademik/> 
-          <CardAkademik/> 
+          <CardAkademik title={'Jadwal Kuliah'} icons={'icon-schedule.svg'} images={'akademik-image.png'}/> 
+          <CardAkademik title={'IP Semester'} icons={'icon-IP.svg'} images={'IPS-image.png'}/> 
+          <CardAkademik title={'Tugas'} icons={'icon-tugas.svg'} images={'tugas-image.png'}/> 
+          <CardAkademik title={'Kartu Hasil Studi dan Evaluasi'} icons={'icon-KHS.svg'} images={'khs-image.png'}/> 
         </div>
         <div className="flex flex-col">
          <CardAbsensi/>
