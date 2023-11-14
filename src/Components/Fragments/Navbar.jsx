@@ -58,7 +58,7 @@ const DashboardNavbar = ({handleOpen, isOpen}) =>{
  
   return(
     <>
-      <nav className="w-full flex flex-row justify-between p-5 lg:p-10 items-center ">      
+      <nav className="w-full flex flex-row justify-between p-5 lg:p-10 items-center bg-white z-50 ">      
           <Link to="/" className="w-[100px] h-[30px] lg:w-[150px] lg:h-[40px] bg-[url('./assets/images/logo.png')] bg-cover animate-fade delay-150"/>
           <div className="hidden md:flex flex-row items-center text-[15px] 2xl:text-[18px]">
             <Button classname="bg-none text-tBlue font-bold animate-fade-right animate-delay-100" >Hubungkan Akun Mahasiswa</Button> 
