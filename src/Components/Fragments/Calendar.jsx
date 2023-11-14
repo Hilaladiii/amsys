@@ -16,8 +16,8 @@ const EventCalendar = () => {
         <div className='w-[100px] h-[80px] flex flex-row items-center gap-3 bg-[#390DEA1A]'>
           <div className='w-2 h-[80px] bg-tBlue'/>
           <div className='flex flex-col items-start'>
-            <p className='font-bold'>{events[date.toISOString().split('T')[0]]}</p>
-            <span className='font-semibold'>IMK</span>
+            <p className='font-bold text-[12px]'>{events[date.toISOString().split('T')[0]]}</p>
+            <span className='text-[10px] font-semibold'>IMK</span>
             <div>
               <div/>
               <span className='text-[10px] font-light'>18.00</span>
@@ -30,7 +30,7 @@ const EventCalendar = () => {
   };
 
   return (
-    <div className='w-[800px] h-[550px] shadow-lg flex p-10'>      
+    <div className='shadow-lg flex p-10 animate-fade-right delay-150'>      
       <Calendar
         onChange={setSelectedDate}
         value={selectedDate}
