@@ -12,11 +12,11 @@ const CartesianChart = ({ data, labels, type, xLabel, yLabel }) => {
         labels: labels || [],
         datasets: [
           {
-            label: 'Chart Title',
+            label: '',
             data: data || [],
             fill: false,
-            borderColor: 'rgba(75, 192, 192, 1)',
-            borderWidth: 1,
+            borderColor: 'rgba(41, 132, 228, 1)',
+            borderWidth: 3,
           },
         ],
       },

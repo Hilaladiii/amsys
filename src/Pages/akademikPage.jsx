@@ -5,14 +5,14 @@ import Navbar, { NavbarLeft } from "../Components/Fragments/Navbar"
 
 const AkademikPage = () => {
   const data = [
-    { x: 1, y: 10 },
-    { x: 2, y: 20 },
-    { x: 3, y: 30 },
-    { x: 4, y: 25 },
-    { x: 5, y: 15 },
+    { x: 1, y: 3.47 },
+    { x: 2, y: 3.53 },
+    { x: 3, y: 3.67 },
+    { x: 4, y: 3.72 },
+    { x: 5, y: 3.81 },
   ];
-  const xLabel = 'X Axis';
-  const yLabel = 'Y Axis';
+  const xLabel = 'Semester';
+  const yLabel = 'IPS';
   return (
     <div className="w-full flex flex-col">
       <Navbar types={'akademik-navbar'}/>        
@@ -26,8 +26,9 @@ const AkademikPage = () => {
         </div>
         <div className="flex flex-col">
          <CardAbsensi/>
-         <div className="w-[450px] p-10 rounded-md shadow-md ">
-          <CartesianChart data={data} xLabel={xLabel} yLabel={yLabel} />;
+         <div className="w-[450px] flex flex-col p-9 rounded-lg shadow-lg ">
+          <h1 className="mx-auto font-semibold text-tBlue">Statistik IP Semester</h1>
+          <CartesianChart data={data} xLabel={xLabel} yLabel={yLabel} />
          </div>
         </div>
         
