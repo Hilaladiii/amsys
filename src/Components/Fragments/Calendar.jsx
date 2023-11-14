@@ -6,15 +6,15 @@ const EventCalendar = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
   const events = {
     '2023-11-15': 'Tugas 3',
-    '2023-11-20': 'Event 2',
-    '2023-11-25': 'Event 3',
+    '2023-11-20': 'UTS',
+    '2023-11-25': 'Tugas 4',
   };
   
   const tileContent = ({ date, view }) => {
     if (events[date.toISOString().split('T')[0]]) {
       return(
-        <div className='w-[90px] h-[60px] flex flex-row items-center gap-3 bg-[#FF00001A]'>
-          <div className='w-2 h-[60px] bg-tBlue'/>
+        <div className='w-[100px] h-[80px] flex flex-row items-center gap-3 bg-[#390DEA1A]'>
+          <div className='w-2 h-[80px] bg-tBlue'/>
           <div className='flex flex-col items-start'>
             <p className='font-bold'>{events[date.toISOString().split('T')[0]]}</p>
             <span className='font-semibold'>IMK</span>
