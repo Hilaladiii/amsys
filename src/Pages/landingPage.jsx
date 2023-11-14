@@ -27,9 +27,7 @@ const LandingPage = () => {
           isCardLogin ? <CardLogin/> : <CardRegister/>
         }        
         <div className="mb-[50px]"></div>        
-      </div>
-      
-
+      </div>    
     </div>
   )
 }
