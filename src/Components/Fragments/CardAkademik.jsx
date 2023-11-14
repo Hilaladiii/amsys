@@ -12,7 +12,7 @@ const CardAkademik = ({title, icons, images}) => {
               </div>
                 <h1>{title}</h1>
             </div>        
-            <div className={`w-[160px] h-[130px] bg-[url('/public/images/${images}')] bg-cover bg-no-repeat bg-center `}/>
+            <div className={`w-[160px] h-[130px] `} style={{ backgroundImage: `url('https://amsys.vercel.app/images/${images}')`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}/>
           </div>
         </div>
     </div>
