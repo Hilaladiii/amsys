@@ -1,3 +1,4 @@
+import CardAbsensi from "../Components/Fragments/CardAbsensi"
 import CardAkademik from "../Components/Fragments/CardAkademik"
 import Navbar, { NavbarLeft } from "../Components/Fragments/Navbar"
 
@@ -13,7 +14,8 @@ const AkademikPage = () => {
           <CardAkademik/> 
           <CardAkademik/> 
         </div>
-
+        <CardAbsensi/>
+        
       </div>      
       
     </div>
