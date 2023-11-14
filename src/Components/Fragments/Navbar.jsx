@@ -86,7 +86,7 @@ const DashboardNavbar = ({handleOpen, isOpen}) =>{
 const NavbarTop = ({handleOpen, isOpen}) =>{
   return(
     <>
-      <nav className="w-full flex flex-row justify-between px-20 py-7 items-center shadow-md "> 
+      <nav className="w-full flex flex-row justify-between px-20 py-7 items-center shadow-md z-50 bg-white"> 
           <div className="flex flex-row justify-between items-center gap-32">
             <Link to="/" className="w-[100px] h-[30px] lg:w-[110px] lg:h-[38px] bg-[url('./assets/images/logo.png')] bg-cover bg-center animate-fade delay-150"/>
             <div className="flex flex-row justify-center items-center gap-2 ">
@@ -120,8 +120,8 @@ const NavbarTop = ({handleOpen, isOpen}) =>{
 
 const NavbarLeft = () =>{
   return(
-    <nav className="w-[30%] h-[70vh] flex flex-col gap-3 text-[15px] p-4 font-medium ">
-      <div className="flex flex-row items-center gap-3">
+    <nav className="w-[20%] h-[84vh] flex flex-col justify-center gap-3 text-[15px] px-4 py-4 font-medium shadow-md">
+      <div className="flex flex-row items-center gap-3 hover:bg-tBlue">
         <div className="w-[25px] h-[25px] bg-[url('./assets/icons/icon-beranda.svg')] bg-contain bg-center bg-no-repeat"/>
         <span>Beranda</span>
       </div>
@@ -131,7 +131,7 @@ const NavbarLeft = () =>{
           <div className="w-[30px] h-[30px] bg-[url('./assets/icons/icon-academic.svg')] bg-contain bg-center bg-no-repeat"/>
           <Link to={'/akademik'}>Akademik</Link>
         </div>      
-        <div className="flex flex-col justify-between gap-2 px-10 py-5 ">
+        <div className="flex flex-col justify-between gap-2 px-8 py-5 ">
           <div className="flex flex-row items-center gap-2">
             <div className="w-[30px] h-[30px] bg-[url('./assets/icons/icon-schedule.svg')] bg-cover bg-center bg-no-repeat"/>
             <Link>Jadwal Kuliah</Link>
@@ -162,7 +162,7 @@ const NavbarLeft = () =>{
           <div className="w-[30px] h-[30px] bg-[url('./assets/icons/icon-informasi.svg')] bg-cover bg-center bg-no-repeat"/>
           <span>Informasi</span>
         </div>
-        <div className="flex flex-col justify-between gap-2 px-10 py-5 ">
+        <div className="flex flex-col justify-between gap-2 px-8 py-5 ">
           <div className="flex flex-row items-center gap-2">
             <div className="w-[30px] h-[30px] bg-[url('./assets/icons/icon-terkini.svg')] bg-cover bg-center bg-no-repeat"/>
             <Link>Tekini</Link>
