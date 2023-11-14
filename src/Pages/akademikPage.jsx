@@ -25,8 +25,8 @@ const AkademikPage = () => {
           <CardAkademik title={'Kartu Hasil Studi dan Evaluasi'} icons={'icon-KHS.svg'} images={'khs-image.png'}/> 
         </div>
         <div className="flex flex-col">
-         <CardAbsensi/>
-         <div className="w-[450px] flex flex-col p-9 rounded-lg shadow-lg ">
+         <CardAbsensi matkul={['IMK','BASIS DATA','METNUM','AI']}/>
+         <div className="w-[450px] flex flex-col p-9 rounded-lg shadow-lg animate-fade-left ">
           <h1 className="mx-auto font-semibold text-tBlue">Statistik IP Semester</h1>
           <CartesianChart data={data} xLabel={xLabel} yLabel={yLabel} />
          </div>

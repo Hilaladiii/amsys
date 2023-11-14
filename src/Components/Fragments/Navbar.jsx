@@ -88,14 +88,14 @@ const NavbarTop = ({handleOpen, isOpen}) =>{
     <>
       <nav className="w-full flex flex-row justify-between px-20 py-7 items-center shadow-md z-50 bg-white"> 
           <div className="flex flex-row justify-between items-center gap-32">
-            <Link to="/" className="w-[100px] h-[30px] lg:w-[110px] lg:h-[38px] bg-[url('./assets/images/logo.png')] bg-cover bg-center animate-fade delay-150"/>
-            <div className="flex flex-row justify-center items-center gap-2 ">
+            <Link to="/" className="w-[100px] h-[30px] lg:w-[110px] lg:h-[38px] bg-[url('./assets/images/logo.png')] bg-cover bg-center animate-fade-right delay-150"/>
+            <div className="flex flex-row justify-center items-center gap-2 animate-fade-right animate-delay-200">
               <div className="w-[40px] h-[40px] bg-[url('https://amsys.vercel.app/images/akademik.png')] bg-contain bg-no-repeat bg-center"/>
-              <span className="text-[15px] text-[#9C9191] font-semibold">Akademik</span>            
+              <span className="text-[15px] text-[#9C9191] font-semibold ">Akademik</span>            
             </div>
           </div>     
-          <div className="hidden md:flex flex-row gap-3 items-center text-[15px] 2xl:text-[18px]">
-            <span className="text-[12px] text-white bg-tBlue px-4 py-2 rounded-3xl">Federico Roberto Dos Santos</span>
+          <div className="hidden md:flex flex-row gap-3 items-center text-[15px] 2xl:text-[18px] animate-fade-right animate-delay-300">
+            <span className="text-[12px] text-white bg-tBlue px-4 py-2 rounded-3xl ">Federico Roberto Dos Santos</span>
             <span className="text-[#9C9191]">|</span>
             <div className="w-[40px] h-[40px] bg-[url('./assets/icons/profile.png')] bg-contain bg-center"/>
           </div>
@@ -121,17 +121,17 @@ const NavbarTop = ({handleOpen, isOpen}) =>{
 const NavbarLeft = () =>{
   return(
     <nav className="w-[20%] h-[84vh] flex flex-col justify-center gap-3 text-[15px] px-4 py-4 font-medium shadow-md">
-      <div className="flex flex-row items-center gap-3 hover:bg-tBlue">
+      <div className="flex flex-row items-center gap-3 hover:bg-tBlue animate-fade-right animate-delay-150">
         <div className="w-[25px] h-[25px] bg-[url('./assets/icons/icon-beranda.svg')] bg-contain bg-center bg-no-repeat"/>
         <span>Beranda</span>
       </div>
 
       <div className="flex flex-col">
-        <div className="flex flex-row items-center gap-2">
+        <div className="flex flex-row items-center gap-2 animate-fade-right animate-delay-150">
           <div className="w-[30px] h-[30px] bg-[url('./assets/icons/icon-academic.svg')] bg-contain bg-center bg-no-repeat"/>
           <Link to={'/akademik'}>Akademik</Link>
         </div>      
-        <div className="flex flex-col justify-between gap-2 px-8 py-5 ">
+        <div className="flex flex-col justify-between gap-2 px-8 py-5 animate-fade-right animate-delay-300">
           <div className="flex flex-row items-center gap-2">
             <div className="w-[30px] h-[30px] bg-[url('./assets/icons/icon-schedule.svg')] bg-cover bg-center bg-no-repeat"/>
             <Link>Jadwal Kuliah</Link>
@@ -152,17 +152,17 @@ const NavbarLeft = () =>{
          </div>      
       </div>
 
-      <div className="flex flex-row items-center gap-2 ">
+      <div className="flex flex-row items-center gap-2 animate-fade-right animate-delay-150">
         <div className="w-[30px] h-[30px] bg-[url('./assets/icons/icon-kemahasiswaan.svg')] bg-cover bg-center bg-no-repeat"/>
         <span>Kemahasiswaan</span>
       </div>
 
       <div className="flex flex-col">
-        <div className="flex flex-row items-center gap-2">
+        <div className="flex flex-row items-center gap-2 animate-fade-right animate-delay-150">
           <div className="w-[30px] h-[30px] bg-[url('./assets/icons/icon-informasi.svg')] bg-cover bg-center bg-no-repeat"/>
           <span>Informasi</span>
         </div>
-        <div className="flex flex-col justify-between gap-2 px-8 py-5 ">
+        <div className="flex flex-col justify-between gap-2 px-8 py-5 animate-fade-right animate-delay-300">
           <div className="flex flex-row items-center gap-2">
             <div className="w-[30px] h-[30px] bg-[url('./assets/icons/icon-terkini.svg')] bg-cover bg-center bg-no-repeat"/>
             <Link>Tekini</Link>
