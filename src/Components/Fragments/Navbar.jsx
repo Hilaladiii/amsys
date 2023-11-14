@@ -120,7 +120,7 @@ const NavbarTop = ({handleOpen, isOpen}) =>{
 
 const NavbarLeft = () =>{
   return(
-    <nav className="w-[20%] h-[84vh] flex flex-col justify-center gap-3 text-[15px] px-4 py-4 font-medium shadow-md">
+    <nav className="w-[20%] h-[84vh] flex flex-col justify-center gap-3 text-[15px] px-4 py-4 font-medium shadow-md bg-white z-50">
       <div className="flex flex-row items-center gap-3 hover:bg-tBlue animate-fade-right animate-delay-150">
         <div className="w-[25px] h-[25px] bg-[url('./assets/icons/icon-beranda.svg')] bg-contain bg-center bg-no-repeat"/>
         <span>Beranda</span>
