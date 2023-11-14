@@ -2,7 +2,7 @@
 
 const CardAkademik = ({title, icons, images}) => {
   return (
-    <div className="group lg:w-[600px] lg:h-[130px] shadow-md rounded-r-lg pr-6 hover:bg-tBlue duration-300 animate-fade-down ">
+    <div className="group lg:w-[600px] lg:h-[130px] shadow-md rounded-r-lg pr-6 hover:bg-tBlue animate-fade-down ">
         <div className="flex flex-row items-start">
           <div className="w-[10px] h-[130px] bg-tBlue group-hover:bg-white"/>
           <div className="w-full flex flex-row justify-between items-start">
