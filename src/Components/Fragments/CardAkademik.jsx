@@ -12,7 +12,7 @@ const CardAkademik = ({title, icons, images}) => {
               </div>
                 <h1>{title}</h1>
             </div>        
-            <div className={`w-[160px] h-[130px] bg-[url('./assets/images/${images}')] bg-cover bg-no-repeat bg-center `}/>
+            <div className={`w-[160px] h-[130px] bg-[url('/public/images/${images}')] bg-cover bg-no-repeat bg-center `}/>
           </div>
         </div>
     </div>
