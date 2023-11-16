@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import Button from "../Elements/Button/Button"
 import Hamburger from "../Elements/Button/Hamburger"
 import { useState } from "react"
+import ButtonNavbar from "../Elements/Button/ButtonNavbar"
 
 
 const Navbar = ({ onLoginClick, onRegisterClick, types }) => {  
@@ -121,15 +122,16 @@ const NavbarTop = ({handleOpen, isOpen}) =>{
 const NavbarLeft = () =>{
   return(
     <nav className="hidden md:w-[30%] md:h-[84vh] lg:flex flex-col justify-center gap-3 2xl:gap-6 bg-white text-[15px] px-4 py-4 2xl:p-7 font-medium shadow-md">
-      <div className="flex flex-row items-center gap-3 hover:bg-tBlue animate-fade-right animate-delay-150">
-        <div className="w-[25px] h-[25px] 2xl:w-[40px] 2xl:h-[40px] bg-[url('./assets/icons/icon-beranda.svg')] bg-contain bg-center bg-no-repeat"/>
-        <span className=" text-[15px] 2xl:text-[20px]">Beranda</span>
-      </div>
+      
+     <ButtonNavbar title={"Beranda"} navigation={"Beranda"} icons={'icon-beranda.svg'}/>
 
       <div className="flex flex-col">
-        <div className="flex flex-row items-center gap-2 animate-fade-right animate-delay-150">
-          <div className="w-[30px] h-[30px] 2xl:w-[40px] 2xl:h-[40px] bg-[url('./assets/icons/icon-academic.svg')] bg-contain bg-center bg-no-repeat"/>
-          <Link to={'/akademik'} className="text-[15px] 2xl:text-[20px]">Akademik</Link>
+        <div className="group flex flex-row justify-between items-center hover:bg-[#9F9F9F17]  animate-fade-right animate-delay-150">
+          <div className="flex flex-row gap-3 p-1 items-center">
+            <div className="w-[30px] h-[30px] 2xl:w-[40px] 2xl:h-[40px] bg-[url('./assets/icons/icon-academic.svg')] bg-contain bg-center bg-no-repeat"/>
+            <Link to={'/akademik'} className="text-[15px] 2xl:text-[20px]">Akademik</Link>
+          </div>
+          <div className="w-1 h-8 bg-white group-hover:bg-tBlue"/>
         </div>      
         <div className="flex flex-col justify-between gap-2 px-8 py-5 animate-fade-right animate-delay-300">
           <div className="flex flex-row items-center gap-2">
