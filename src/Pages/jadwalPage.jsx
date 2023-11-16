@@ -1,10 +1,11 @@
 import Navbar from "../Components/Fragments/Navbar";
 import { NavbarLeft } from "../Components/Fragments/Navbar";
 import CardJadwal from "../Components/Fragments/CardJadwal";
+import SksBox from "../Components/Elements/SKS/SksBox";
 
 const JadwalPage = () => {
     const listWarna = {
-        jarkom: "#909090", pbo: "#EAD40D", imk: "#FF0000", asd: "#00FF66", basdat: "#390DEA", pancasila: "#FF30DE", daa: "#5edae0"
+        jarkom: "#909090", pbo: "#EAD40D", imk: "#f74040", asd: "#00FF66", basdat: "#6a63f7", pancasila: "#FF30DE", daa: "#5edae0"
     }
 
     const jadwalSenin = [
@@ -38,14 +39,22 @@ const JadwalPage = () => {
     return (
         <div className="w-full flex flex-col bg-[url('./images/jadwal/BackgroundJadwal.svg')] bg-no-repeat bg-cover">
             <Navbar types="akademik-navbar" />
-                <div className="w-[100vw] h-[50vh] mt-[6%] flex flex-row gap-3 ">
+                <div className="w-full h-[50vh] mt-[7%] flex flex-row ">
                     <NavbarLeft />    
-                    <div className="grid grid-cols-3 gap-4">
+                    <div className="w-[80%] overflow-y-scroll h-[85vh] flex flex-col">
+                    <div className="flex flex-row justify-center items-center gap-7  mt-2">
+                        <SksBox title="SKS" content="24"/>
+                        <SksBox title="SKS Wajib" content="15"/>
+                        <SksBox title="SKS Praktikum" content="6"/>
+                        <SksBox title="SKS Umum" content="3"/>
+                    </div>    
+                    <div className="flex flex-wrap">
                         <CardJadwal day="Senin" jadwal={jadwalSenin}></CardJadwal>
                         <CardJadwal day="Selasa" jadwal={jadwalSelasa}></CardJadwal>
                         <CardJadwal day="Rabu" jadwal={jadwalRabu}></CardJadwal>
                         <CardJadwal day="Kamis" jadwal={jadwalKamis}></CardJadwal>
                         <CardJadwal day="Jumat" jadwal={jadwalJumat}></CardJadwal>
+                    </div>
                     </div>
                 </div>
         </div>

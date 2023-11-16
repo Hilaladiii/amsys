@@ -5,7 +5,6 @@ import AkademikPage from "./Pages/akademikPage";
 import TugasPage from "./Pages/tugasPage";
 import JadwalPage from "./Pages/jadwalPage";
 function App() {
-
   return (
     <BrowserRouter>
       <Routes>
