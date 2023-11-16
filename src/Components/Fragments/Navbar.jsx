@@ -120,59 +120,59 @@ const NavbarTop = ({handleOpen, isOpen}) =>{
 
 const NavbarLeft = () =>{
   return(
-    <nav className="hidden md:w-[20%] md:h-[84vh] lg:flex flex-col justify-center gap-3 2xl:gap-6 bg-white text-[15px] px-4 py-4 2xl:p-7 font-medium shadow-md">
+    <nav className="hidden md:w-[30%] md:h-[84vh] lg:flex flex-col justify-center gap-3 2xl:gap-6 bg-white text-[15px] px-4 py-4 2xl:p-7 font-medium shadow-md">
       <div className="flex flex-row items-center gap-3 hover:bg-tBlue animate-fade-right animate-delay-150">
         <div className="w-[25px] h-[25px] 2xl:w-[40px] 2xl:h-[40px] bg-[url('./assets/icons/icon-beranda.svg')] bg-contain bg-center bg-no-repeat"/>
-        <span className="2xl:text-[20px]">Beranda</span>
+        <span className=" text-[15px] 2xl:text-[20px]">Beranda</span>
       </div>
 
       <div className="flex flex-col">
         <div className="flex flex-row items-center gap-2 animate-fade-right animate-delay-150">
           <div className="w-[30px] h-[30px] 2xl:w-[40px] 2xl:h-[40px] bg-[url('./assets/icons/icon-academic.svg')] bg-contain bg-center bg-no-repeat"/>
-          <Link to={'/akademik'} className="2xl:text-[20px]">Akademik</Link>
+          <Link to={'/akademik'} className="text-[15px] 2xl:text-[20px]">Akademik</Link>
         </div>      
         <div className="flex flex-col justify-between gap-2 px-8 py-5 animate-fade-right animate-delay-300">
           <div className="flex flex-row items-center gap-2">
             <div className="w-[30px] h-[30px] 2xl:w-[40px] 2xl:h-[40px] bg-[url('./assets/icons/icon-schedule.svg')] bg-cover bg-center bg-no-repeat"/>
-            <Link className="2xl:text-[20px]">Jadwal Kuliah</Link>
+            <Link className=" text-[15px] 2xl:text-[20px]">Jadwal Kuliah</Link>
           </div>
           <div className="flex flex-row items-center gap-2">
             <div className="w-[30px] h-[30px] 2xl:w-[40px] 2xl:h-[40px] bg-[url('./assets/icons/icon-IP.svg')] bg-cover bg-center bg-no-repeat"/>            
-            <Link className="2xl:text-[20px]">IP Semester</Link>
+            <Link className="text-[15px] 2xl:text-[20px]">IP Semester</Link>
           </div>
           <div className="flex flex-row items-center gap-2">
             <div className="w-[30px] h-[30px] 2xl:w-[40px] 2xl:h-[40px] bg-[url('./assets/icons/icon-tugas.svg')] bg-cover bg-center bg-no-repeat"/>
-            <Link className="2xl:text-[20px]">Tugas</Link>            
+            <Link className="text-[15px] 2xl:text-[20px]">Tugas</Link>            
           </div>
           <div className="flex flex-row items-center gap-2 2xl:text-[20px]">
             <div className="w-[30px] h-[30px] 2xl:w-[40px] 2xl:h-[40px] bg-[url('./assets/icons/icon-KHS.svg')] bg-cover bg-center bg-no-repeat"/>
-            <Link className="">KHS dan Evaluasi</Link>            
+            <Link className="text-[15px] 2xl:text-[20px]">KHS dan Evaluasi</Link>            
           </div>
           
          </div>      
       </div>
 
-      <div className="flex flex-row items-center gap-2 2xl:text-[20px] animate-fade-right animate-delay-150">
+      <div className="flex flex-row items-center gap-2 text-[15px] 2xl:text-[20px] animate-fade-right animate-delay-150">
         <div className="w-[30px] h-[30px] 2xl:w-[40px] 2xl:h-[40px] bg-[url('./assets/icons/icon-kemahasiswaan.svg')] bg-cover bg-center bg-no-repeat"/>
         <span>Kemahasiswaan</span>
       </div>
 
       <div className="flex flex-col">
-        <div className="flex flex-row items-center gap-2 2xl:text-[20px] animate-fade-right animate-delay-150">
+        <div className="flex flex-row items-center gap-2 text-[15px] 2xl:text-[20px] animate-fade-right animate-delay-150">
           <div className="w-[30px] h-[30px] 2xl:w-[40px] 2xl:h-[40px] bg-[url('./assets/icons/icon-informasi.svg')] bg-cover bg-center bg-no-repeat"/>
           <span>Informasi</span>
         </div>
         <div className="flex flex-col justify-between gap-2 px-8 py-5 animate-fade-right animate-delay-300">
-          <div className="flex flex-row items-center gap-2 2xl:text-[20px]">
+          <div className="flex flex-row items-center gap-2 text-[15px] 2xl:text-[20px]">
             <div className="w-[30px] h-[30px] 2xl:w-[40px] 2xl:h-[40px] bg-[url('./assets/icons/icon-terkini.svg')] bg-cover bg-center bg-no-repeat"/>
             <Link>Tekini</Link>
           </div>
           <div className="flex flex-row items-center gap-2 2xl:text-[20px]">
-            <div className="w-[30px] h-[30px] 2xl:w-[40px] 2xl:h-[40px] bg-[url('./assets/icons/icon-biaya.svg')] bg-cover bg-center bg-no-repeat"/>            
+            <div className="w-[30px] h-[30px] 2xl:w-[40px] text-[15px] 2xl:h-[40px] bg-[url('./assets/icons/icon-biaya.svg')] bg-cover bg-center bg-no-repeat"/>            
             <Link>Biaya Kuliah</Link>
           </div>
           <div className="flex flex-row items-center gap-2 2xl:text-[20px]">
-            <div className="w-[30px] h-[30px] 2xl:w-[40px] 2xl:h-[40px] bg-[url('./assets/icons/icon-informasiAkademik.svg')] bg-cover bg-center bg-no-repeat"/>
+            <div className="w-[30px] h-[30px] 2xl:w-[40px] text-[15px] 2xl:h-[40px] bg-[url('./assets/icons/icon-informasiAkademik.svg')] bg-cover bg-center bg-no-repeat"/>
             <Link>Akademik</Link>            
           </div>          
           

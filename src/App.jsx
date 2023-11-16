@@ -3,6 +3,7 @@ import LandingPage from "./Pages/landingPage";
 import DashboardPage from "./Pages/dashboardPage";
 import AkademikPage from "./Pages/akademikPage";
 import TugasPage from "./Pages/tugasPage";
+import TestPage from "./Pages/testPage";
 function App() {
 
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/dashboard" element={<DashboardPage />}/>
         <Route path="/akademik" element={<AkademikPage />}/>
         <Route path="/tugas" element={<TugasPage />}/>
+        <Route path="/test" element={<TestPage />}/>
       </Routes>
     </BrowserRouter>
   )
