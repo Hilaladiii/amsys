@@ -37,18 +37,18 @@ const JadwalPage = () => {
 ]
 
     return (
-        <div className="w-full flex flex-col bg-[url('./images/jadwal/BackgroundJadwal.svg')] bg-no-repeat bg-cover">
+        <div className="w-full flex flex-col bg-[url('./images/jadwal/BackgroundJadwal.svg')] bg-no-repeat bg-cover h-[120vh] lg:h-[100vh] md:h-[98vh]">
             <Navbar types="akademik-navbar" />
-                <div className="w-full h-[50vh] mt-[7%] flex flex-row ">
+                <div className="w-full h-[50vh] mt-[35%] md:mt-[12%] lg:mt-[7%] flex flex-row">
                     <NavbarLeft />    
-                    <div className="w-[80%] overflow-y-scroll h-[85vh] flex flex-col">
-                    <div className="flex flex-row justify-center items-center gap-7  mt-2">
+                    <div className="md:w-[100%] w-[80%] overflow-y-scroll h-[85vh] flex flex-col ">
+                    <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center gap-7 mt-2">
                         <SksBox title="SKS" content="24"/>
                         <SksBox title="SKS Wajib" content="15"/>
                         <SksBox title="SKS Praktikum" content="6"/>
                         <SksBox title="SKS Umum" content="3"/>
                     </div>    
-                    <div className="flex flex-wrap">
+                    <div className="flex flex-wrap md:flex-wrap justify-center">
                         <CardJadwal day="Senin" jadwal={jadwalSenin}></CardJadwal>
                         <CardJadwal day="Selasa" jadwal={jadwalSelasa}></CardJadwal>
                         <CardJadwal day="Rabu" jadwal={jadwalRabu}></CardJadwal>
