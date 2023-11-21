@@ -4,11 +4,11 @@ import Navbar, { NavbarLeft } from "../Components/Fragments/Navbar"
 
 const InformasiAkademikPage = () => {
   return (
-    <div className="flex flex-col">
+    <div className="w-full flex flex-col">
       <Navbar types={"akademik-navbar"}/>
-      <div className="flex flex-row gap-4 mt-[7%]">
+      <div className="flex flex-row  gap-4 mt-[7%]">
         <NavbarLeft/>
-        <div className="w-full flex flex-col-reverse lg:flex-row justify-between gap-3 mt-20 lg:mt-3 ">
+        <div className="w-[120vw] flex flex-col-reverse lg:flex-row justify-between gap-3 mt-20 lg:mt-3 ">
           
           <div className=" lg:h-[80vh] flex flex-col gap-2 lg:overflow-y-scroll p-2">
             <div className="w-full flex flex-row gap-2 px-4 md:px-0 "> 
@@ -34,7 +34,7 @@ const InformasiAkademikPage = () => {
               detail={'Universitas Brawijaya (UB) Malang menemukan potensi limbah cangkang tiram yang digunakan sebagai bahan baterai kendaraan listrik. . .='}
             />            
           </div>
-          <div>
+          
             <CardInformasi type={"detail-card"}
             information={'Informasi Akademik'}
             category={'Pelayanan Kesejahteraan Mahasiswa'}
@@ -45,7 +45,7 @@ const InformasiAkademikPage = () => {
             images={"https://amsys.vercel.app/images/informasi-akademik.png"}
             />
 
-          </div>
+          
 
           
         </div>
