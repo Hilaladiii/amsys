@@ -13,7 +13,7 @@ const CardInformasi = ({type,status,date,}) => {
 
 const CardDetailInformasi=()=>{
   return(
-    <div className="w-full max-w-lg h-[80vh] flex flex-col p-5 shadown-md overflow-y-scroll">
+    <div className="w-full lg:max-w-lg lg:h-[80vh] flex flex-col p-5 shadown-md lg:overflow-y-scroll">
       <h1 className="text-3xl font-semibold text-tBlue">Informasi Terkini</h1>
       <div>
         <span className="text-[#D5D5D5] text-[12px]">Pelayanan Minat dan Bakat</span>
@@ -42,7 +42,7 @@ const CardDetailInformasi=()=>{
 
 const CardMiniInformasi = () =>{
   return(
-    <div className="w-full max-w-xl flex flex-col px-5 py-4 gap-2 rounded-md shadow-md">
+    <div className="w-full lg:max-w-xl flex flex-col px-5 py-4 gap-2 rounded-md shadow-md">
       <div className="flex flex-row justify-between">
         <span className="bg-tBlue px-3 rounded-xl text-white text-[12px] italic font-normal">Terbaru</span>
         <span className="text-[12px] text-tBlue italic">20 November 2023</span>
