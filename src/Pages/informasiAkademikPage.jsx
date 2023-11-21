@@ -2,7 +2,7 @@ import CardInformasi from "../Components/Fragments/CardInformasi"
 import Navbar, { NavbarLeft } from "../Components/Fragments/Navbar"
 
 
-const InformasiTerkini = () => {
+const InformasiAkademikPage = () => {
   return (
     <div className="flex flex-col">
       <Navbar types={"akademik-navbar"}/>
@@ -36,15 +36,13 @@ const InformasiTerkini = () => {
           </div>
           <div>
             <CardInformasi type={"detail-card"}
-            information={'Informasi Terkini'}
-            category={'Pelayanan Minat dan Bakat'}
-            title={'Paduan Suara FLOICE UB, Raih Gold Medal di Busan '}
-            date={'18 November 2023'}
+            information={'Informasi Akademik'}
+            category={'Pelayanan Kesejahteraan Mahasiswa'}
+            title={'Pengumuman Pengambilan Jas Almamater Bagi Mahasiswa Angkatan Tahun 2023 Jenjang D3, D4, dan S1'}
+            date={'20 November 2023'}
             views={768}
-            detail1={'Paduan Suara FLOICE, dari FTP Universitas Brawijaya menyabet tiga gelar juara di ajang “Busan Choral Festival & Competition 2023” yang diselenggarakan di Busan, Korea Selatan (17-21/10/2023). Dalam perlombaan BCFC, tim UB meraih juara 2nd prize Pop and Acapella Category; Gold diploma Pop and Acappella Category; dan Gold diploma Ethnic Category.'}
-            detail2={'Saat dikonfirmasi Humas UB, Dr. Setiawan Noerdajasakti, SH.,MH selaku Wakil Rektor bidang Kemahasiswaan, Kewirausahaan dan Alumni UB mengatakan bangga atas prestasi gemilang yang dicapai FLOICE di Busan. “Saya sangat mengapresiasi dan bangga atas prestasi yang telah diraih oleh tim FLOICE di Busan. Prestasi ini tentu mengharumkan nama UB di mata internasional. Terima kasih atas kerja keras tim yang tak kenal lelah,” katanya. Sementara itu ketua rombongan FLOICE, Floice Jiyan Nafis Dewantara menyampaikan rasa senang dan bangganya atas prestasi timnya. “Proses yang sangat panjang dan berbulan-bulan, akhirnya dapat membuahkan hasil sesuai harapan. Terima kasih banyak atas segala bantuannya sehingga kami dapat mencapai prestasi ini,” katanya Floice'}
+            detail1={'Direktur Direktorat Aset dengan ini mengumumkan pendistribusian jas almamater bagi Mahasiswa Universitas Brawijaya angkatan tahun 2023 jenjang D3, D4 dan S1 akan dilaksanakan pada :'}
             images1={"https://amsys.vercel.app/images/informasi-terkini2.png"}
-            images2={"https://amsys.vercel.app/images/gambar-informasi-terkini.png"}
             />
 
           </div>
@@ -56,4 +54,4 @@ const InformasiTerkini = () => {
   )
 }
 
-export default InformasiTerkini
+export default InformasiAkademikPage
