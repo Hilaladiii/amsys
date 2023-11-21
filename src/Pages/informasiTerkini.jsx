@@ -18,20 +18,20 @@ const InformasiTerkini = () => {
             <CardInformasi type={"mini-card"} 
               status={'terbaru'} 
               date={'20 November 2023'}
-              title={'Pengumuman Pengambilan Jas Almamater Bagi Mahasiswa Angkatan Tahun 2023 Jenjang D3, D4, dan S1'}
-              detail={'Direktur Direktorat Aset dengan ini mengumumkan pendistribusian jas almamater bagi Mahasiswa . . .'}
+              title={'Pelaksanaan Wisuda Periode V dan VI TA. 2023/2024'}
+              detail={'Sehubungan dengan pelaksanaan Wisuda Universitas Brawijaya, kami informasikan jadwal dan tata cara Wisuda Universitas Brawijaya Tahun Akademik . . .'}
               />            
             <CardInformasi type={"mini-card"}
               status={'sudah dibuka'} 
               date={'18 November 2023'}
-              title={'Kelas yang Diwajibkan Mengikuti Kuliah Tamu'}
-              detail={'Paduan Suara FLOICE, dari FTP Universitas Brawijaya menyabet tiga gelar juara di ajang “Busan Choral Festival & Competition 2023” yang diselenggarakan . . .'}
+              title={'Limbah Cangkang Tiram Bahan Alternatif Baterai'}
+              detail={'Universitas Brawijaya (UB) Malang menemukan potensi limbah cangkang tiram yang digunakan sebagai bahan baterai kendaraan listrik. . .'}
             />            
             <CardInformasi type={"mini-card"}
               status={'sudah dibuka'} 
               date={'14 November 2023'}
-              title={'Pelaksanaan perkuliahan selama penyelenggaraan GEMASTIK 2023'}
-              detail={'Universitas Brawijaya (UB) Malang menemukan potensi limbah cangkang tiram yang digunakan sebagai bahan baterai kendaraan listrik. . .='}
+              title={'Paduan Suara FLOICE UB, Raih Gold Medal di Busan'}
+              detail={'Paduan Suara FLOICE, dari FTP Universitas Brawijaya menyabet tiga gelar juara di ajang “Busan Choral Festival & Competition 2023” yang diselenggarakan . . .'}
             />            
           </div>
           <div>
@@ -43,8 +43,7 @@ const InformasiTerkini = () => {
             views={768}
             detail1={'Paduan Suara FLOICE, dari FTP Universitas Brawijaya menyabet tiga gelar juara di ajang “Busan Choral Festival & Competition 2023” yang diselenggarakan di Busan, Korea Selatan (17-21/10/2023). Dalam perlombaan BCFC, tim UB meraih juara 2nd prize Pop and Acapella Category; Gold diploma Pop and Acappella Category; dan Gold diploma Ethnic Category.'}
             detail2={'Saat dikonfirmasi Humas UB, Dr. Setiawan Noerdajasakti, SH.,MH selaku Wakil Rektor bidang Kemahasiswaan, Kewirausahaan dan Alumni UB mengatakan bangga atas prestasi gemilang yang dicapai FLOICE di Busan. “Saya sangat mengapresiasi dan bangga atas prestasi yang telah diraih oleh tim FLOICE di Busan. Prestasi ini tentu mengharumkan nama UB di mata internasional. Terima kasih atas kerja keras tim yang tak kenal lelah,” katanya. Sementara itu ketua rombongan FLOICE, Floice Jiyan Nafis Dewantara menyampaikan rasa senang dan bangganya atas prestasi timnya. “Proses yang sangat panjang dan berbulan-bulan, akhirnya dapat membuahkan hasil sesuai harapan. Terima kasih banyak atas segala bantuannya sehingga kami dapat mencapai prestasi ini,” katanya Floice'}
-            images1={"https://amsys.vercel.app/images/informasi-terkini2.png"}
-            images2={"https://amsys.vercel.app/images/gambar-informasi-terkini.png"}
+            images={"https://amsys.vercel.app/images/informasi-terkini2.png"}            
             />
 
           </div>

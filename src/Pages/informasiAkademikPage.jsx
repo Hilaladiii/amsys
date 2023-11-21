@@ -42,7 +42,7 @@ const InformasiAkademikPage = () => {
             date={'20 November 2023'}
             views={768}
             detail1={'Direktur Direktorat Aset dengan ini mengumumkan pendistribusian jas almamater bagi Mahasiswa Universitas Brawijaya angkatan tahun 2023 jenjang D3, D4 dan S1 akan dilaksanakan pada :'}
-            images1={"https://amsys.vercel.app/images/informasi-terkini2.png"}
+            images={"https://amsys.vercel.app/images/informasi-akademik.png"}
             />
 
           </div>

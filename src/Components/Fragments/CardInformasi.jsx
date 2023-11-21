@@ -1,18 +1,18 @@
 
 
 
-const CardInformasi = ({type,status,date,title,detail,detail1, detail2, category, images,images1,images2,views, information}) => {
+const CardInformasi = ({type,status,date,title,detail,detail1, detail2, category, images,views, information}) => {
   return (
     <>
     {
       type === "mini-card" ? <CardMiniInformasi status={status} date={date} title={title} detail={detail}/> : 
-      type === "detail-card" ? <CardDetailInformasi category={category} title={title} date={date} detail1={detail1} detail2={detail2} images={images} views={views} information={information} images1={images1} images2={images2}/> : null
+      type === "detail-card" ? <CardDetailInformasi category={category} title={title} date={date} detail1={detail1} detail2={detail2} images={images} views={views} information={information}/> : null
     }
     </>    
   )
 }
 
-const CardDetailInformasi=({information,category, title, date, detail1,detail2, images1,images2,views})=>{
+const CardDetailInformasi=({information,category, title, date, detail1,detail2,images,views})=>{
   return(
     <div className="w-full lg:max-w-lg lg:h-[80vh] flex flex-col p-5 shadown-md lg:overflow-y-scroll">
       <h1 className="text-3xl font-semibold text-tBlue">{information}</h1>
@@ -31,9 +31,8 @@ const CardDetailInformasi=({information,category, title, date, detail1,detail2, 
           </div>
         </div>
         <p className="text-justify text-[14px]">{detail1}</p>
-        <div className="flex flex-row gap-2 my-3">
-          <img src={images1} alt="gambar" className="w-[200px] h-[200px]"  />
-          <img src={images2} alt="gambar" className="w-[200px] h-[200px]" />
+        <div className="flex flex-row gap-2 my-3 justify-center">
+          <img src={images} alt="gambar"  />          
         </div>
         <p className="text-justify text-[14px]">{detail2}</p>
       </div>
