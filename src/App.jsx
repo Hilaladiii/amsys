@@ -4,6 +4,7 @@ import DashboardPage from "./Pages/dashboardPage";
 import AkademikPage from "./Pages/akademikPage";
 import TugasPage from "./Pages/tugasPage";
 import JadwalPage from "./Pages/jadwalPage";
+import InformasiTerkini from "./Pages/informasiTerkini";
 function App() {
 
   return (
@@ -14,6 +15,8 @@ function App() {
         <Route path="/akademik" element={<AkademikPage />}/>
         <Route path="/tugas" element={<TugasPage />}/>
         <Route path="/jadwal" element={<JadwalPage />}/>
+        <Route path="/informasi-terkini" element={<InformasiTerkini />}/>
+
       </Routes>
     </BrowserRouter>
   )
