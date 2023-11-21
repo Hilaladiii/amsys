@@ -1,7 +1,7 @@
 
 const CardMahasiswa = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center gap-5 rounded-lg shadow-md p-7">
+    <div className="w-full md:max-w-lg flex flex-col justify-center items-center gap-5 rounded-lg shadow-md p-7">
       <h1 className="text-[20px] text-tBlue font-semibold">Data Mahasiswa</h1>
       <div className="flex flex-row justify-center  gap-5">
 
