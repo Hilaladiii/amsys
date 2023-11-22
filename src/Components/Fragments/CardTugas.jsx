@@ -6,7 +6,7 @@ const CardTugas = ({statusTugas, totalTugas,}) => {
   const icons = statusTugas === "Tugas Selesai" ? "https://amsys.vercel.app/icons/icon-centang.svg" : statusTugas === "Belum Dikerjakan" ? "https://amsys.vercel.app/icons/icon-notComplete.svg" : statusTugas === "Terlewat" ? "https://amsys.vercel.app/icons/icon-overdue.svg" : ""  
   return (
     <div className={`w-[220px] flex flex-col justify-center items-center gap-5 px-5 py-3 border-[1px] shadow-md rounded-xl`} style={{borderColor: `${color}`}}>
-      <div className={`w-[40px] h-[40px] rounded-md bg-[url("${icons}")] bg-no-repeat bg-center bg-contain`}/>
+      <div className={`w-[40px] h-[40px] rounded-md  bg-no-repeat bg-center bg-contain`} style={{backgroundImage: `url(${icons})`}}/>
       <div className="flex flex-col justify-center items-center">
         <span className="font-semibold">{statusTugas}</span>
         <div className="flex flex-row justify-between items-center">
