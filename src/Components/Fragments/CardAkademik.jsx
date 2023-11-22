@@ -14,7 +14,7 @@ const CardAkademik = ({title, icons, images, navigate}) => {
               </div>
                 <h1 className="text-[12px] md:text-[15px] 2xl:text-[20px]">{title}</h1>
             </div>        
-            <div className={`w-[160px] h-[130px] 2xl:w-[180px] 2xl:h-[150px]`} style={{ backgroundImage: `url('https://amsys.vercel.app/images/${images}')`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}/>
+            <div className={`mt-6 md:mt-0 w-[100px] h-[100px] md:w-[160px] md:h-[130px] 2xl:w-[180px] 2xl:h-[150px]`} style={{ backgroundImage: `url('https://amsys.vercel.app/images/${images}')`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}/>
           </div>
         </div>
     </div>
