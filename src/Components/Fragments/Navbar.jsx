@@ -97,7 +97,7 @@ const NavbarTop = ({handleOpen, isOpen}) =>{
           <div className="flex flex-row justify-between items-center gap-3 lg:gap-32">
             <Link to="/" className="w-[100px] h-[30px] lg:w-[110px] lg:h-[38px] 2xl:w-[150px] 2xl:h-[50px] bg-[url('./assets/images/logo.png')] bg-cover bg-center animate-fade-right delay-150"/>
             <div className="flex flex-row justify-center items-center gap-2 animate-fade-right animate-delay-200">
-              <div className={`w-[40px] h-[40px] 2xl:w-[70px] 2xl:h-[70px] bg-[url('${icons}')] bg-contain bg-no-repeat bg-center`}/>
+              <div className={`w-[40px] h-[40px] 2xl:w-[70px] 2xl:h-[70px]`} style={{ backgroundImage: `url(${icons})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}/>
               <span className="text-[15px] 2xl:text-[24px] text-[#9C9191] font-semibold ">{title}</span>            
             </div>
           </div>     
