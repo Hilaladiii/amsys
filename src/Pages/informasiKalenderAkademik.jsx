@@ -9,7 +9,7 @@ const InformasiKalenderAkademik = () => {
       <Navbar types={"akademik-navbar"}/>
       <div className="flex flex-row justify-center gap-4 mt-[7%]">
         <NavbarLeft/>
-        <div className="w-full lg:w-[120vw] flex flex-col-reverse lg:flex-row justify-center items-center gap-3 mt-20 lg:mt-3 ">
+        <div className="w-full lg:w-[120vw] flex flex-col-reverse lg:flex-row justify-center gap-3 mt-20 lg:mt-3 ">
           
           <div className="w-full lg:h-[80vh] flex flex-col gap-2 lg:overflow-y-scroll p-3">
             <div className="w-full flex flex-row gap-2 px-4 md:px-0 "> 
@@ -36,8 +36,9 @@ const InformasiKalenderAkademik = () => {
             />            
           </div>
           
-            <div className="w-full md:max-w-sm justify-center">
-              <Calendar/>
+            <div className="w-full md:max-w-sm">
+              <h1 className="text-3xl text-tBlue font-bold">Kalender Akademik</h1>
+              <Calendar className="rounded-lg border-none shadow-lg p-8 font-semibold text-[#485C71]"/>
             </div>
 
           
