@@ -97,7 +97,7 @@ const NavbarTop = ({handleOpen, isOpen}) =>{
           <div className="flex flex-row justify-between items-center gap-3 lg:gap-32">
             <Link to="/" className="w-[100px] h-[30px] lg:w-[110px] lg:h-[38px] 2xl:w-[150px] 2xl:h-[50px] bg-[url('./assets/images/logo.png')] bg-cover bg-center animate-fade-right delay-150"/>
             <div className="flex flex-row justify-center items-center gap-2 animate-fade-right animate-delay-200">
-              <div className={`w-[40px] h-[40px] 2xl:w-[70px] 2xl:h-[70px]`} style={{ backgroundImage: `url(${icons})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}/>
+              <div className={`w-[40px] h-[40px] 2xl:w-[70px] 2xl:h-[70px]`} style={{ backgroundImage: `url(${icons})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}/>
               <span className="text-[15px] 2xl:text-[24px] text-[#9C9191] font-semibold ">{title}</span>            
             </div>
           </div>     
@@ -127,12 +127,12 @@ const NavbarTop = ({handleOpen, isOpen}) =>{
 
 const NavbarLeft = () =>{
   return(
-    <nav className="hidden  md:w-[30%] md:h-[80vh] lg:flex flex-col justify-center gap-3 2xl:gap-6 bg-white text-[15px] px-4 py-4 2xl:p-7 font-medium">
+    <nav className="hidden  md:w-[30%] md:h-[85vh] lg:flex flex-col justify-center gap-3 2xl:gap-6 bg-white text-[15px] px-4 py-4 2xl:p-7 font-medium">
       
       <Link to={"/dashboard"} className="group flex flex-row justify-between items-center hover:bg-[#9F9F9F17] animate-fade-right animate-delay-150">
         <div className="flex flex-row gap-3 p-1 items-center">
           <div className="w-[25px] h-[25px] 2xl:w-[40px] 2xl:h-[40px] bg-[url('./assets/icons/icon-beranda.svg')] bg-contain bg-center bg-no-repeat"/>
-          <span className=" text-[15px] 2xl:text-[20px]">Beranda</span>
+          <span className=" text-[14px] 2xl:text-[18px]">Beranda</span>
         </div>
         <div className="w-1 h-8 bg-white group-hover:bg-tBlue"/>
       </Link>
@@ -142,17 +142,17 @@ const NavbarLeft = () =>{
         <Link to={"/akademik"} className="group flex flex-row justify-between items-center hover:bg-[#9F9F9F17] animate-fade-right animate-delay-150">
           <div className="flex flex-row gap-3 p-1 items-center">
             <div className="w-[25px] h-[25px] 2xl:w-[40px] 2xl:h-[40px] bg-[url('./assets/icons/icon-academic.svg')] bg-contain bg-center bg-no-repeat"/>
-            <span className="text-[15px] 2xl:text-[20px]">Akademik</span>
+            <span className="text-[14px] 2xl:text-[18px]">Akademik</span>
           </div>
           <div className="w-1 h-8 bg-white group-hover:bg-tBlue"/>
         </Link>  
 
         <div className="mt-2 mx-auto flex flex-col justify-between gap-2 animate-fade-right animate-delay-300">
           
-          <Link to={"/jadwal"} className="group w-full flex flex-row justify-between items-center gap-2 hover:bg-[#9F9F9F17]">
+          <Link to={"/akademik-jadwal"} className="group w-full flex flex-row justify-between items-center gap-2 hover:bg-[#9F9F9F17]">
             <div className="flex flex-row gap-2 items-center">
               <div className="w-[25px] h-[25px] 2xl:w-[40px] 2xl:h-[40px] bg-[url('./assets/icons/icon-schedule.svg')] bg-cover bg-center bg-no-repeat"/>
-              <span className=" text-[15px] 2xl:text-[20px]">Jadwal Kuliah</span>
+              <span className=" text-[14px] 2xl:text-[18px]">Jadwal Kuliah</span>
             </div>
             <div className="w-1 h-8 bg-white group-hover:bg-tBlue"/>
           </Link>
@@ -160,14 +160,14 @@ const NavbarLeft = () =>{
           <Link className="group w-full flex flex-row justify-between items-center gap-2 hover:bg-[#9F9F9F17]">
             <div className="flex flex-row gap-2 items-center">
               <div className="w-[25px] h-[25px] 2xl:w-[40px] 2xl:h-[40px] bg-[url('./assets/icons/icon-IP.svg')] bg-cover bg-center bg-no-repeat"/>            
-              <span className="text-[15px] 2xl:text-[20px]">IP Semester</span>            
+              <span className="text-[14px] 2xl:text-[18px]">IP Semester</span>            
             </div>
             <div className="w-1 h-8 bg-white group-hover:bg-tBlue"/>
           </Link>
-          <Link to={"/tugas"} className="group w-full flex flex-row justify-between items-center gap-2 hover:bg-[#9F9F9F17]">
+          <Link to={"/akademik-tugas"} className="group w-full flex flex-row justify-between items-center gap-2 hover:bg-[#9F9F9F17]">
             <div className="flex flex-row gap-2 items-center">
               <div className="w-[30px] h-[30px] 2xl:w-[40px] 2xl:h-[40px] bg-[url('./assets/icons/icon-tugas.svg')] bg-cover bg-center bg-no-repeat"/>
-              <span className="text-[15px] 2xl:text-[20px]">Tugas</span>                        
+              <span className="text-[14px] 2xl:text-[18px]">Tugas</span>                        
             </div>
             <div className="w-1 h-8 bg-white group-hover:bg-tBlue"/>
           </Link>
@@ -175,7 +175,7 @@ const NavbarLeft = () =>{
           <Link className="group w-full flex flex-row justify-between items-center gap-2 hover:bg-[#9F9F9F17]">
             <div className="flex flex-row gap-2 items-center">
               <div className="w-[30px] h-[30px] 2xl:w-[40px] 2xl:h-[40px] bg-[url('./assets/icons/icon-KHS.svg')] bg-cover bg-center bg-no-repeat"/>
-              <span className="text-[15px] 2xl:text-[20px]">KHS dan Evaluasi</span>            
+              <span className="text-[14px] 2xl:text-[18px]">KHS dan Evaluasi</span>            
             </div>
             <div className="w-1 h-8 bg-white group-hover:bg-tBlue"/>
           </Link>
@@ -186,7 +186,7 @@ const NavbarLeft = () =>{
       <Link to={"/kemahasiswaan"} className="group flex flex-row justify-between items-center hover:bg-[#9F9F9F17] animate-fade-right animate-delay-150">
         <div className="flex flex-row gap-2 items-center">
           <div className="w-[30px] h-[30px] 2xl:w-[40px] 2xl:h-[40px] bg-[url('./assets/icons/icon-kemahasiswaan.svg')] bg-cover bg-center bg-no-repeat"/>
-          <span>Kemahasiswaan</span>        
+          <span className="text-[14px] 2xl:text-[18px]">Kemahasiswaan</span>        
         </div>
         <div className="w-1 h-8 bg-white group-hover:bg-tBlue"/>
       </Link>
@@ -195,7 +195,7 @@ const NavbarLeft = () =>{
         <Link className="group flex flex-row justify-between items-center hover:bg-[#9F9F9F17] animate-fade-right animate-delay-150">
           <div className="flex flex-row gap-2 items-center">
             <div className="w-[30px] h-[30px] 2xl:w-[40px] 2xl:h-[40px] bg-[url('./assets/icons/icon-informasi.svg')] bg-cover bg-center bg-no-repeat"/>
-            <span>Informasi</span>          
+            <span className="text-[14px] 2xl:text-[18px]">Informasi</span>          
           </div>
           <div className="w-1 h-8 bg-white group-hover:bg-tBlue"/>
         </Link>
@@ -204,7 +204,7 @@ const NavbarLeft = () =>{
           <Link to={'/informasi-terkini'} className="group flex flex-row justify-between items-center hover:bg-[#9F9F9F17] animate-fade-right animate-delay-150">
             <div className="flex flex-row gap-2 items-center">
               <div className="w-[30px] h-[30px] 2xl:w-[40px] 2xl:h-[40px] bg-[url('./assets/icons/icon-terkini.svg')] bg-cover bg-center bg-no-repeat"/>
-              <span>Tekini</span>            
+              <span className="text-[14px] 2xl:text-[18px]">Tekini</span>            
             </div>
             <div className="w-1 h-8 bg-white group-hover:bg-tBlue"/>
           </Link>
@@ -212,7 +212,7 @@ const NavbarLeft = () =>{
           <Link to={"/informasi-biaya"} className="group flex flex-row justify-between items-center hover:bg-[#9F9F9F17] animate-fade-right animate-delay-150">
             <div className="flex flex-row gap-2 items-center">
               <div className="w-[30px] h-[30px] 2xl:w-[40px] text-[15px] 2xl:h-[40px] bg-[url('./assets/icons/icon-biaya.svg')] bg-cover bg-center bg-no-repeat"/>            
-              <span>Biaya Kuliah</span>
+              <span className="text-[14px] 2xl:text-[18px]">Biaya Kuliah</span>
             </div>
             <div className="w-1 h-8 bg-white group-hover:bg-tBlue"/>
           </Link>
@@ -220,7 +220,15 @@ const NavbarLeft = () =>{
           <Link to={"/informasi-akademik"} className="group flex flex-row justify-between items-center hover:bg-[#9F9F9F17] animate-fade-right animate-delay-150">
             <div className="flex flex-row gap-2 items-center">
               <div className="w-[30px] h-[30px] 2xl:w-[40px] text-[15px] 2xl:h-[40px] bg-[url('./assets/icons/icon-informasiAkademik.svg')] bg-cover bg-center bg-no-repeat"/>
-              <span>Akademik</span>                
+              <span className="text-[14px] 2xl:text-[18px]">Akademik</span>                
+            </div>
+            <div className="w-1 h-8 bg-white group-hover:bg-tBlue"/>
+          </Link> 
+
+          <Link to={"/informasi-kalender"} className="group flex flex-row justify-between items-center hover:bg-[#9F9F9F17] animate-fade-right animate-delay-150">
+            <div className="flex flex-row gap-2 items-center">
+              <div className="w-[30px] h-[30px] 2xl:w-[40px] text-[15px] 2xl:h-[40px] bg-[url('./assets/icons/icon-kalenderAkademik.svg')] bg-cover bg-center bg-no-repeat"/>
+              <span className="text-[14px] 2xl:text-[18px]">Kalender Akademik</span>                
             </div>
             <div className="w-1 h-8 bg-white group-hover:bg-tBlue"/>
           </Link>          

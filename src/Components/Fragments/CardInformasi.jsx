@@ -7,7 +7,8 @@ const CardInformasi = ({type,status,date,title,detail,detail1, detail2, category
     {
       type === "mini-card" ? <CardMiniInformasi status={status} date={date} title={title} detail={detail}/> : 
       type === "detail-card" ? <CardDetailInformasi category={category} title={title} date={date} detail1={detail1} detail2={detail2} images={images} views={views} information={information}/> : 
-      type === "biaya-card" ? <CardInformasiBiaya/> : null
+      type === "biaya-card" ? <CardInformasiBiaya/> : 
+      type === "kalender-card" ? <CardInformasiKalender/> : null
     }
     </>    
   )
@@ -73,6 +74,28 @@ const CardInformasiBiaya = () =>{
           <p className="text-[14px] text-[#AAA8A8]"> Mohon segera melakukan pembayaran!</p>
         </div>
       <span className="text-[14px] text-tBlue">20 Juli 2023</span>
+    </div>
+  )
+}
+
+const CardInformasiKalender = () =>{
+  return(
+    <div className="w-full lg:max-w-2xl flex flex-col px-5 py-4 gap-2 rounded-md shadow-md">
+      <div className="flex flex-row gap-3">
+        <div className="w-full max-w-[120px] flex flex-col justify-center items-center bg-tBlue px-4 rounded-xl text-white text-[12px] ">
+          <span>Ganjil</span>
+          <span>2023/2024</span>
+        </div>
+        <h1 className="font-semibold text-[15px]">Registrasi Administrasi bagi mahasiswa lama (pembayaran UKT/SPP)</h1>
+      </div>
+
+      <div className="flex flex-row gap-3">
+        <div className="w-full max-w-[120px] flex flex-col justify-center items-center bg-[#2984E42E] rounded-xl text-tBlue text-[12px] ">
+          <span>31 Juli 2023</span>
+          <span>11 Agustus 2023</span>
+        </div>
+        <p className="text-[12px]">Bagi mahasiswa lama dapat registrasi administrasi (pembayaran) UKT/SPP menggunakan no virtual account masing-masing.</p>
+      </div>
     </div>
   )
 }
