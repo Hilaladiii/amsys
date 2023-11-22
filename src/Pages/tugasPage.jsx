@@ -11,9 +11,9 @@ const TugasPage = () => {
       <NavbarLeft/>
       <EventCalendar/>
         <div className="flex flex-col items-center p-5 shadow-lg gap-2 animate-fade-down">
-          <CardTugas statusTugas={'Tugas Selesai'} totalTugas={'52'}/>
-          <CardTugas statusTugas={'Belum Dikerjakan'} totalTugas={'4'}/>
-          <CardTugas statusTugas={'Terlewat'} totalTugas={'2'}/>
+          <CardTugas statusTugas={"Tugas Selesai"} totalTugas={'52'}/>
+          <CardTugas statusTugas={"Belum Dikerjakan"} totalTugas={'4'}/>
+          <CardTugas statusTugas={"Terlewat"} totalTugas={'2'}/>
         </div>
       </div>
     </div>
