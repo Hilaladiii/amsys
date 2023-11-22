@@ -17,16 +17,16 @@ const CardAbsensi = ({matkul}) => {
             }
           </select>
           <span className="mx-auto text-[42px] 2xl:text-[60px] font-semibold">90%</span>
-          <div className="w-[60%] flex flex-col gap-1">
+          <div className="w-full max-w-[170px] flex flex-col gap-1">
             <h1 className="text-[12px] 2xl:text-[16px] text-tBlue underline">Detail Tidak Hadir</h1>
-            <div className="flex flex-row justify-between text-[#9C9191] text-[12px] 2xl:text-[16px]">
+            <div className="w-full flex flex-row items-center gap-4 text-[#9C9191] text-[10px] md:text-[12px] 2xl:text-[16px]">
               <div className="flex flex-row items-center gap-1 ">
                 <div className="w-1 h-4 bg-[#9C9191] rounded-md"/>
                 <span>Pertemuan 2</span>
               </div>
               <span>12/08/2023</span>
             </div>
-            <div className="flex flex-row justify-between text-[#9C9191] text-[12px] 2xl:text-[16px]">
+            <div className="flex flex-row items-center gap-4 text-[#9C9191] text-[10px]  md:text-[12px] 2xl:text-[16px]">
               <div className="flex flex-row items-center gap-1">
                 <div className="w-1 h-4 bg-[#9C9191] rounded-md"/>
                 <span>Pertemuan 2</span>

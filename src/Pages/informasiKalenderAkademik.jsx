@@ -37,7 +37,7 @@ const InformasiKalenderAkademik = () => {
           </div>
           
             <div className="w-full md:max-w-sm">
-              <h1 className="text-3xl text-tBlue font-bold">Kalender Akademik</h1>
+              <h1 className="text-2xl text-tBlue font-bold mb-7">Kalender Akademik</h1>
               <Calendar className="rounded-lg border-none shadow-lg p-8 font-semibold text-[#485C71]"/>
             </div>
 
