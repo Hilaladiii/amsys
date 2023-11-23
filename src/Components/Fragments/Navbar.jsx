@@ -98,14 +98,14 @@ const NavbarTop = ({handleOpen, isOpen}) =>{
           <div className="flex flex-row justify-between items-center gap-3 lg:gap-32">
             <Link to="/dashboard" className="w-[80px] h-[20px] lg:w-[110px] lg:h-[38px] 2xl:w-[150px] 2xl:h-[50px] bg-[url('./assets/images/logo.png')] bg-cover bg-center animate-fade-right delay-150"/>
             <div className="flex flex-row justify-center items-center gap-2 animate-fade-right animate-delay-200">
-              <div className={`w-[30px] h-[30px] 2xl:w-[70px] 2xl:h-[70px]`} style={{ backgroundImage: `url(${icons})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}/>
-              <span className="text-[12px] md:text-[15px] 2xl:text-[24px] text-[#9C9191] font-semibold ">{title}</span>            
+              <div className={`w-[30px] h-[30px] md:w-[50px] md:h-[50px] 2xl:w-[70px] 2xl:h-[70px]`} style={{ backgroundImage: `url(${icons})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}/>
+              <span className="text-[12px] md:text-[15px] lg:text-[18px] 2xl:text-[24px] text-[#9C9191] font-semibold ">{title}</span>            
             </div>
           </div>     
           <div className="hidden md:flex flex-row gap-3 items-center text-[15px] 2xl:text-[18px] animate-fade-right animate-delay-300">
-            <span className="text-[12px] 2xl:text-[18px] text-white bg-tBlue px-4 py-2 rounded-3xl ">Federico Roberto Dos Santos</span>
+            <span className="text-[12px] lg:text-[15px] 2xl:text-[18px] text-white bg-tBlue px-4 py-2 rounded-3xl ">Federico Roberto Dos Santos</span>
             <span className="text-[#9C9191]">|</span>
-            <div className="w-[40px] h-[40px] 2xl:w-[60px] 2xl:h-[60px] bg-[url('./assets/icons/profile.png')] bg-contain bg-center"/>
+            <div className="w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] 2xl:w-[60px] 2xl:h-[60px] bg-[url('./assets/icons/profile.png')] bg-contain bg-center"/>
           </div>
 
           <button onClick={handleOpen} className="md:hidden">          

@@ -37,7 +37,7 @@ const JadwalPage = () => {
 ]
 
     return (
-        <div className="w-full flex flex-col bg-[url('./images/jadwal/BackgroundJadwal.svg')] bg-no-repeat bg-cover h-[120vh] lg:h-[100vh] md:h-[98vh]">
+        <div className="w-full flex flex-col bg-[url('/images/jadwal/BackgroundJadwal.svg')] bg-no-repeat bg-cover h-[120vh] lg:h-[100vh] md:h-[98vh]">
             <Navbar types="akademik-navbar" />
                 <div className="w-full h-[50vh] mt-[35%] md:mt-[12%] lg:mt-[7%] flex flex-row">
                     <NavbarLeft />    
