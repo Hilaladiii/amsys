@@ -3,7 +3,7 @@ const CardJadwal = ({day, jadwal}) => {
       <div className="w-[320px] md:w-[480-px] md:h-[365-px] 2xl:w-[570-px] 2xl:h-[420-px] bg-white rounded-3xl p-10 flex flex-col justify-between gap-2 shadow-2xl md:mx-2 mt-10 animate-fade-up">
           <div className="flex flex-row justify-between gap-2">
               <div className="flex flex-row justify-center items-center">
-                  <img className="w-[40px] h-[40px]" src="/images/jadwal/book-logo.png" alt="logo buku" />
+                  <img className="w-[40px] h-[40px]" src="./assets/icons/icon-book.png" alt="logo buku" />
                  <h1 className="text-md font-semibold">{day}</h1>
               </div>
               <div className="flex flex-row justify-end items-baseline">
