@@ -13,7 +13,7 @@ const CardGrafik = ({fakultas, tahun}) =>{
     const xLabel = 'Bulan ke';
     const yLabel = 'Orang';
     return (
-        <div className="w-full md:w-[370px] md:h-[370px] lg:h-[320px] bg-white rounded-3xl p-6 flex flex-col justify duration-300 between shadow-2xl animate-fade-down animated-delay-300">
+        <div className="w-full md:w-[370px] md:h-[370px] lg:h-[320px] bg-white rounded-3xl p-6 flex flex-col justify-center duration-300  shadow-2xl animate-fade-down animated-delay-300">
             <div className="flex flex-col mx-auto justify-center items-center">
                 <h1 className="text-black font-bold md:text-[20px]">Grafik pekerjaan lulusan</h1>
                 <h1 className="text-black font-bold">Universitas Brawijaya</h1>
