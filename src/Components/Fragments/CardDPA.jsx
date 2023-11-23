@@ -1,6 +1,6 @@
 const CardDPA = () => {
     return (
-        <div className="w-[367px] h-[380px] bg-white rounded-3xl p-6 flex flex-col justify-between shadow-2xl duration-300 animate-fade-down animated-delay-300">
+        <div className="w-full h-[370px] md:w-[350px] md:h-[370px] lg:w-full lg:h-[380px] bg-white rounded-3xl p-6 flex flex-col justify-between shadow-2xl duration-300 animate-fade-down animated-delay-300">
             <div className="flex flex-col mx-auto justify-center items-center">
                 <h1 className="text-black font-bold">Dosen Pembimbing</h1>
                 <h1 className="text-black font-bold">Akademik</h1>
@@ -11,7 +11,7 @@ const CardDPA = () => {
                     <tr><td>Email</td><td>: dosen@gmail.com</td></tr>
                 </table>
                 <div className="flex flex-row py-4">
-                    <div className="w-[315px] h-[44px] border rounded-xl bg-[#2984E4] flex flex-row justify-center items-center">
+                    <div className="w-[230px] h-[40px] md:w-[315px] md:h-[44px] border rounded-xl bg-[#2984E4] flex flex-row justify-center items-center">
                         <h1 className="text-[#FFF] text-[14px]">Hubungi DPA</h1>
                     </div>
                 </div>    
