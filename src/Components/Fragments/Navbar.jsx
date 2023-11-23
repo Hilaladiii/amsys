@@ -1,4 +1,4 @@
-import { Link, useHref } from "react-router-dom"
+import { Link, useHref, useNavigate } from "react-router-dom"
 import Button from "../Elements/Button/Button"
 import Hamburger from "../Elements/Button/Hamburger"
 import { useState } from "react"
@@ -16,7 +16,7 @@ const Navbar = ({ onLoginClick, onRegisterClick, types }) => {
           ? 
             <AuthNavbar onLoginClick={onLoginClick} onRegisterClick={onRegisterClick} handleOpen={handleOpen} isOpen={open}/> 
           : types ==='dashboard-navbar' ? <DashboardNavbar handleOpen={handleOpen} isOpen={open}/> 
-          : types ==='akademik-navbar' ? <NavbarTop handleOpen={handleOpen} isOpen={open}/> : null
+          : types ==='akademik-navbar'||'kemahasiswaan-navbar'||'informasi-navbar' ? <NavbarTop handleOpen={handleOpen} isOpen={open}/> : null
       }
     </header>
   )
@@ -84,6 +84,7 @@ const DashboardNavbar = ({handleOpen, isOpen}) =>{
 }
 
 const NavbarTop = ({handleOpen, isOpen}) =>{
+  const nav = useNavigate()
   const pathName = useHref(); 
   const title = pathName.includes("/akademik") ? "Akademik" : 
                 pathName.includes("/informasi") ? "Informasi" :
@@ -95,10 +96,10 @@ const NavbarTop = ({handleOpen, isOpen}) =>{
     <>
       <nav className="w-full flex flex-row justify-between px-5 md:px-16 lg:px-20 py-7 items-center shadow-md z-50 bg-white"> 
           <div className="flex flex-row justify-between items-center gap-3 lg:gap-32">
-            <Link to="/" className="w-[100px] h-[30px] lg:w-[110px] lg:h-[38px] 2xl:w-[150px] 2xl:h-[50px] bg-[url('./assets/images/logo.png')] bg-cover bg-center animate-fade-right delay-150"/>
+            <Link to="/dashboard" className="w-[80px] h-[20px] lg:w-[110px] lg:h-[38px] 2xl:w-[150px] 2xl:h-[50px] bg-[url('./assets/images/logo.png')] bg-cover bg-center animate-fade-right delay-150"/>
             <div className="flex flex-row justify-center items-center gap-2 animate-fade-right animate-delay-200">
-              <div className={`w-[40px] h-[40px] 2xl:w-[70px] 2xl:h-[70px]`} style={{ backgroundImage: `url(${icons})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}/>
-              <span className="text-[15px] 2xl:text-[24px] text-[#9C9191] font-semibold ">{title}</span>            
+              <div className={`w-[30px] h-[30px] 2xl:w-[70px] 2xl:h-[70px]`} style={{ backgroundImage: `url(${icons})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}/>
+              <span className="text-[12px] md:text-[15px] 2xl:text-[24px] text-[#9C9191] font-semibold ">{title}</span>            
             </div>
           </div>     
           <div className="hidden md:flex flex-row gap-3 items-center text-[15px] 2xl:text-[18px] animate-fade-right animate-delay-300">
@@ -113,13 +114,21 @@ const NavbarTop = ({handleOpen, isOpen}) =>{
 
       </nav>
           {
-            isOpen &&
-            <div className="w-full p-10 bg-tBlue md:hidden">
-              <div className="w-50% flex flex-col gap-3">
-                <Button>Hubungkan Akun Mahasiswa</Button>               
+            isOpen && pathName.includes("/dashboard") ?(
+              <div className="w-full p-10 bg-tBlue md:hidden">
+                <div className="w-50% flex flex-col gap-3">
+                  <Button>Hubungkan Akun Mahasiswa</Button>               
+                </div>              
               </div>
-              
-            </div>
+            ) :  isOpen && pathName.includes("/akademik" || "/informasi" || "kemahasiswaan") ?(
+              <div className="w-full p-10 bg-tBlue md:hidden">
+                <div className="w-50% flex flex-col gap-3">
+                  <Button onClick={() => nav("/akademik")}>Akdemik</Button>               
+                  <Button onClick={() => nav("/kemahasiswaan")}>Kemahasiswaan</Button>               
+                  <Button onClick={() => nav("/informasi")}>Informasi</Button>               
+                </div>              
+              </div>
+            ) : null
           }
     </>
   )

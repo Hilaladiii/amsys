@@ -2,7 +2,7 @@
 
 const CardAbsensi = ({matkul}) => {
   return (
-    <div className="md:w-[450px] 2xl:w-[530px] flex flex-col justify-between  p-10 rounded-md shadow-md animate-fade-left">
+    <div className="md:w-[450px] 2xl:w-[530px] flex flex-col justify-between gap-2  p-10 rounded-md shadow-md animate-fade-left">
           <div className="flex flex-row justify-between items-center">
             <h1 className="text-[18px] 2xl:text-[22px] text-tBlue font-semibold">Absensi</h1>
             <div className="text-tBlue text-[12px] 2xl:text-[15px] border-[1px] border-tBlue px-3 py-1 rounded-lg">
