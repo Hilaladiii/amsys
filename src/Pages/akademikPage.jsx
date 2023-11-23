@@ -1,7 +1,7 @@
 import CardAbsensi from "../Components/Fragments/CardAbsensi"
 import CardAkademik from "../Components/Fragments/CardAkademik"
-import CartesianChart from "../Components/Fragments/Charts";
 import Navbar, { NavbarLeft } from "../Components/Fragments/Navbar"
+import Graph from "../Components/Fragments/Graph";
 
 const AkademikPage = () => {
   const data = [
@@ -22,7 +22,7 @@ const AkademikPage = () => {
          <CardAbsensi matkul={['IMK','BASIS DATA','METNUM','AI']}/>
          <div className="flex flex-col p-9 rounded-lg shadow-lg animate-fade-left ">
           <h1 className="mx-auto font-semibold text-tBlue">Statistik IP Semester</h1>
-          <CartesianChart data={data} xLabel={xLabel} yLabel={yLabel} />
+          <Graph data={data} xLabel={xLabel} yLabel={yLabel} />
          </div>
         </div>
         <div className="flex flex-col gap-2 2xl:gap-5 p-4 lg:p-0">
@@ -35,7 +35,7 @@ const AkademikPage = () => {
          <CardAbsensi matkul={['IMK','BASIS DATA','METNUM','AI']}/>
          <div className="w-[450px] 2xl:w-[530px] flex flex-col p-9 rounded-lg shadow-lg animate-fade-left ">
           <h1 className="mx-auto font-semibold text-tBlue">Statistik IP Semester</h1>
-          <CartesianChart data={data} xLabel={xLabel} yLabel={yLabel} />
+          <Graph data={data} xLabel={xLabel} yLabel={yLabel} />
          </div>
         </div>
         

@@ -8,6 +8,7 @@ import InformasiTerkini from "./Pages/informasiTerkini";
 import InformasiAkademikPage from "./Pages/informasiAkademikPage";
 import InformasiBiayaPage from "./Pages/informasiBiayaPage";
 import InformasiKalenderAkademik from "./Pages/informasiKalenderAkademik";
+import KemahasiswaanPage from "./Pages/kemahasiswaanPage";
 function App() {
 
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/informasi-akademik" element={<InformasiAkademikPage />}/>
         <Route path="/informasi-biaya" element={<InformasiBiayaPage />}/>
         <Route path="/informasi-kalender" element={<InformasiKalenderAkademik />}/>
+        <Route path="/kemahasiswaan" element={<KemahasiswaanPage />}/>
 
       </Routes>
     </BrowserRouter>
