@@ -35,7 +35,7 @@ const EventCalendar = () => {
         onChange={setSelectedDate}
         value={selectedDate}
         tileContent={tileContent}
-        className={'flex flex-col justify-center w-full h-[480px] rounded-lg border-none shadow-lg font-semibold p-7 text-[#485C71]'}
+        className={'flex flex-col w-full 2xl:h-[630px] justify-center rounded-lg border-none shadow-lg font-semibold p-7 text-[#485C71] 2xl:text-xl'}
       />
     </div>
   );

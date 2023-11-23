@@ -16,7 +16,7 @@ const KemahasiswaanPage = () => {
             <Navbar types={'akademik-navbar'} />
             <div className="w-full mt-[29%] md:mt-[10%] lg:mt-[8%] 2xl:mt-[7%] flex flex-col lg:flex-row gap-2">
                 <NavbarLeft />
-                <div className=" lg:w-[120%] h-[85vh] flex flex-col-reverse p-3 lg:p-0 lg:flex-row overflow-y-scroll md:overflow-x-hidden">
+                <div className=" w-full lg:ml-[22%] flex flex-col-reverse p-3 lg:p-0 lg:flex-row overflow-y-scroll md:overflow-x-hidden">
                     <div className="md:w-[100%] h-[85vh] flex flex-col">
                         <div className="flex flex-col p-4 gap-4">
                             <div className="flex flex-col">

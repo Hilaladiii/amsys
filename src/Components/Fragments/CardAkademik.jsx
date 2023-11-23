@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom"
 const CardAkademik = ({title, icons, images, navigate}) => {
   const nav = useNavigate()
   return (
-    <div className="group lg:w-[600px] lg:h-[130px] 2xl:w-[780px] 2xl:h-[150px] bg-white shadow-md rounded-r-lg pr-6 hover:bg-tBlue animate-fade-down " onClick={()=> nav(`${navigate}`)}>
+    <div className="group w-full lg:min-w-[550px] 2xl:min-w-[700px] bg-white shadow-md rounded-r-lg pr-6 hover:bg-tBlue animate-fade-down " onClick={()=> nav(`${navigate}`)}>
         <div className="flex flex-row items-start">
           <div className="w-[10px] h-[130px] 2xl:h-[150px] bg-tBlue group-hover:bg-white"/>
           <div className="w-full flex flex-row justify-between items-start">

@@ -10,7 +10,7 @@ const InformasiBiayaPage = () => {
     <Navbar types={"akademik-navbar"}/>
     <div className="w-full flex flex-row gap-4 mt-[7%]">
       <NavbarLeft/>
-      <div className="w-[120vw] flex flex-col-reverse lg:flex-row justify-between gap-3 mt-20 lg:mt-3 p-3 ">
+      <div className="w-full lg:ml-[22%] flex flex-col-reverse lg:flex-row justify-between gap-3 mt-20 lg:mt-3 p-3 ">
         <div className="w-full max-w-xl mx-auto lg:h-[80vh] flex flex-col gap-2  p-2">
           <div className="w-full flex flex-row gap-2 px-4 md:px-0 "> 
               <input type="text" placeholder="ketikkan sesuatu" className="w-full text-[12px] shadow-md rounded-md p-2" />

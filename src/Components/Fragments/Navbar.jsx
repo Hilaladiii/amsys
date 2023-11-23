@@ -136,7 +136,7 @@ const NavbarTop = ({handleOpen, isOpen}) =>{
 
 const NavbarLeft = () =>{
   return(
-    <nav className="hidden  md:w-[30%] md:h-[85vh] lg:flex flex-col justify-center gap-3 2xl:gap-6 bg-white text-[15px] px-4 py-4 2xl:p-7 font-medium">
+    <nav className="hidden fixed z-30 top-0 left-0 md:w-[22%] h-screen lg:flex flex-col justify-end gap-3 2xl:gap-6 bg-white shadow-lg text-[15px] px-4 py-4 2xl:p-7 font-medium">
       
       <Link to={"/dashboard"} className="group flex flex-row justify-between items-center hover:bg-[#9F9F9F17] animate-fade-right animate-delay-150">
         <div className="flex flex-row gap-3 p-1 items-center">

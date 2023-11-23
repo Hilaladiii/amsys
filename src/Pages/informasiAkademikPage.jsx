@@ -8,7 +8,7 @@ const InformasiAkademikPage = () => {
       <Navbar types={"akademik-navbar"}/>
       <div className="flex flex-row justify-center gap-4 mt-[7%]">
         <NavbarLeft/>
-        <div className="w-[120vw] flex flex-col-reverse lg:flex-row justify-between gap-3 mt-20 lg:mt-3 ">
+        <div className="w-full lg:ml-[22%] flex flex-col-reverse lg:flex-row justify-between gap-3 mt-20 lg:mt-3 ">
           
           <div className=" lg:h-[80vh] flex flex-col gap-2 lg:overflow-y-scroll p-2">
             <div className="w-full flex flex-row gap-2 px-4 md:px-0 "> 
