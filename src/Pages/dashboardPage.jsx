@@ -14,7 +14,7 @@ const DashboardPage = () => {
       <div className="w-full flex flex-col lg:flex-row justify-center gap-3 lg:gap-20 2xl:gap-24 items-center px-36 mt-20 mb-10 animate-fade-right">
         <CardMain title={'Kemahasiswaan'} imageUrl="https://amsys.vercel.app/images/kemahasiswaan.png" navigate={"/kemahasiswaan"} content={["Hubungi Dosen Pembimbing Akademik","Kartu Hasil Studi dan Evaluasi"]}/>
         <CardMain title={'Akademik'} imageUrl="https://amsys.vercel.app/images/akademik.png" navigate={"/akademik"} content={["Statistik IPK","Jadwal Kuliah","KHS Evaluasi","Kehadiran"]}/>
-        <CardMain title={'Informasi'} imageUrl="https://amsys.vercel.app/images/informasi.png" navigate={""} content={["Akademik","Kalender Akademik","Biaya","Terkini"]}/>
+        <CardMain title={'Informasi'} imageUrl="https://amsys.vercel.app/images/informasi.png" navigate={"/informasi"} content={["Akademik","Kalender Akademik","Biaya","Terkini"]}/>
       </div>      
     </div>
   )
