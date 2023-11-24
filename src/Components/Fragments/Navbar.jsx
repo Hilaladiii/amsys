@@ -120,7 +120,7 @@ const NavbarTop = ({handleOpen, isOpen}) =>{
                   <Button>Hubungkan Akun Mahasiswa</Button>               
                 </div>              
               </div>
-            ) :  isOpen && pathName.includes("/akademik" || "/informasi" || "kemahasiswaan") ?(
+            ) :  isOpen && (pathName.includes("/akademik") || pathName.includes("/informasi") || pathName.includes("kemahasiswaan")) ?(
               <div className="w-full p-10 bg-tBlue md:hidden">
                 <div className="w-50% flex flex-col gap-3">
                   <Button onClick={() => nav("/akademik")}>Akdemik</Button>               

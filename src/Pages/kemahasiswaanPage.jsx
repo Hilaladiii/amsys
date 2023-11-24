@@ -13,12 +13,12 @@ const KemahasiswaanPage = () => {
 }
     return (
         <div className="w-full h-screen flex flex-col">
-            <Navbar types={'akademik-navbar'} />
+            <Navbar types={'kemahasiswaan-navbar'} />
             <div className="w-full mt-[29%] md:mt-[10%] lg:mt-[8%] 2xl:mt-[7%] flex flex-col lg:flex-row gap-2">
                 <NavbarLeft />
                 <div className=" w-full lg:ml-[22%] flex flex-col-reverse p-3 lg:p-0 lg:flex-row overflow-y-scroll md:overflow-x-hidden">
                     <div className="md:w-[100%] h-[85vh] flex flex-col">
-                        <div className="flex flex-col p-4 gap-4">
+                        <div className="flex flex-col p-4 gap-4 mb-10 md:mb-5 lg:mb-0">
                             <div className="flex flex-col">
                                 <h2 className="font-bold text-[20px] animate-fade-down animate-delay-300">Rekomendasi Karir</h2>
                                 <p className="text-[11px] md:text-[14px] text-[#5B5555] animate-fade-down animate-delay-300">Panduan Karir untuk Masa Depan Sukses Anak Anda</p>
