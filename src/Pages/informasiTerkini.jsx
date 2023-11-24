@@ -12,8 +12,8 @@ const InformasiTerkini = () => {
           
           <div className="w-full lg:h-[80vh] flex flex-col gap-2 lg:overflow-y-scroll p-2 animate-fade-down">
             <div className="w-full flex flex-row gap-2 px-4 md:px-0 "> 
-              <input type="text" placeholder="ketikkan sesuatu" className="w-full text-[12px] shadow-md rounded-md p-2" />
-              <button className="bg-tBlue text-[12px] text-white rounded-md px-3 py-2">Cari</button>
+              <input type="text" placeholder="ketikkan sesuatu" className="w-full text-[12px] lg:text-[15px] 2xl:text-[18px] shadow-md rounded-md p-3" />
+              <button className="bg-tBlue text-[12px] lg:text-[15px] 2xl:text-[18px] text-white rounded-md px-3 py-2">Cari</button>
             </div>
             <CardInformasi type={"mini-card"} 
               status={'terbaru'} 
