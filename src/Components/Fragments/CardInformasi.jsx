@@ -16,27 +16,27 @@ const CardInformasi = ({type,status,date,title,detail,detail1, detail2, category
 
 const CardDetailInformasi=({information,category, title, date, detail1,detail2,images,views})=>{
   return(
-    <div className="w-full lg:max-w-lg lg:h-[80vh] flex flex-col p-5 shadown-md lg:overflow-y-scroll">
+    <div className="w-full lg:max-w-lg 2xl:max-w-3xl lg:h-[80vh] flex flex-col p-5 shadown-md lg:overflow-y-scroll">
       <h1 className="text-3xl font-semibold text-tBlue">{information}</h1>
       <div>
-        <span className="text-[#D5D5D5] text-[12px]">{category}</span>
-        <h1 className="text-[24px] font-semibold">{title}</h1>
+        <span className="text-[#D5D5D5] text-[12px] 2xl:text-[15px]">{category}</span>
+        <h1 className="text-[24px] 2xl:text-[26px] font-semibold">{title}</h1>
         <div className="flex flex-col items-end gap-1 mb-2 ">
           <div className="flex flex-row gap-1">
               <div className="w-[20px] h-[20px] bg-[url('/public/icons/icon-schedule-abu.svg')] bg-center bg-contain"/>
-              <span className="text-[14px] text-[#D5D5D5] ">{date}</span>
+              <span className="text-[14px] 2xl:text-[18px] text-[#D5D5D5] ">{date}</span>
           </div>
           <div className="w-[33%] h-[1px] bg-[#D5D5D5] "/>
           <div className="flex flex-row gap-1">
               <div className="w-[20px] h-[20px] bg-[url('/public/icons/icon-view.svg')] bg-center bg-contain"/>
-              <span className="text-[14px] text-[#D5D5D5] ">{views} orang melihat</span>
+              <span className="text-[14px] 2xl:text-[18px] text-[#D5D5D5] ">{views} orang melihat</span>
           </div>
         </div>
-        <p className="text-justify text-[14px]">{detail1}</p>
+        <p className="text-justify text-[14px] 2xl:text-[16px]">{detail1}</p>
         <div className="flex flex-row gap-2 my-3 justify-center">
           <img src={images} alt="gambar"  />          
         </div>
-        <p className="text-justify text-[14px]">{detail2}</p>
+        <p className="text-justify text-[14px] 2xl:text-[16px]">{detail2}</p>
       </div>
     </div>
   )
@@ -44,15 +44,15 @@ const CardDetailInformasi=({information,category, title, date, detail1,detail2,i
 
 const CardMiniInformasi = ({status, date,title,detail}) =>{
   return(
-    <div className="w-full lg:max-w-xl flex flex-col px-5 py-4 gap-2 rounded-md shadow-md">
+    <div className="w-full lg:max-w-lg 2xl:max-w-3xl flex flex-col px-5 py-4 gap-2 rounded-md shadow-md">
       <div className="flex flex-row justify-between">
-        <span className={`${status ==='terbaru' ? 'bg-tBlue text-white' : 'bg-[#EBEBEB] text-[#B6B6B6]'} px-3 rounded-xl text-[12px] italic font-normal`}>{status}</span>
-        <span className="text-[12px] text-tBlue italic">{date}</span>
+        <span className={`${status ==='terbaru' ? 'bg-tBlue text-white' : 'bg-[#EBEBEB] text-[#B6B6B6]'} px-3 rounded-xl text-[12px] 2xl:text-[15px] italic font-normal`}>{status}</span>
+        <span className="text-[12px] 2xl:text-[15px] text-tBlue italic">{date}</span>
       </div>
-      <h1 className="font-semibold text-[15px]">{title}</h1>
-      <p className="text-[12px] text-[#AAA8A8]">{detail}</p>
+      <h1 className="font-semibold text-[15px] 2xl:text-[18px]">{title}</h1>
+      <p className="text-[12px] 2xl:text-[15px] text-[#AAA8A8]">{detail}</p>
       <div className="flex flex-row justify-end">
-        <button className="bg-tBlue text-[12px] text-white font-normal px-3 py-1 rounded-md">Baca Selengkapnya{"  >>"}</button>
+        <button className="bg-tBlue text-[12px] 2xl:text-[15px] text-white font-normal px-3 py-1 rounded-md">Baca Selengkapnya{"  >>"}</button>
       </div>
     </div>
   )
