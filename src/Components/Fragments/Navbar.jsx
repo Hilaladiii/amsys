@@ -201,7 +201,7 @@ const NavbarLeft = () =>{
       </Link>
 
       <div className="flex flex-col">
-        <Link className="group flex flex-row justify-between items-center hover:bg-[#9F9F9F17] animate-fade-right animate-delay-150">
+        <Link to={"/informasi"} className="group flex flex-row justify-between items-center hover:bg-[#9F9F9F17] animate-fade-right animate-delay-150">
           <div className="flex flex-row gap-2 items-center">
             <div className="w-[30px] h-[30px] 2xl:w-[35px] 2xl:h-[35px] bg-[url('./assets/icons/icon-informasi.svg')] bg-cover bg-center bg-no-repeat"/>
             <span className="text-[14px] 2xl:text-[18px]">Informasi</span>          
