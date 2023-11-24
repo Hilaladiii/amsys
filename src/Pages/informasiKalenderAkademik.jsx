@@ -11,10 +11,10 @@ const InformasiKalenderAkademik = () => {
         <NavbarLeft/>
         <div className="w-full lg:ml-[22%] flex flex-col-reverse lg:flex-row justify-center gap-3 mt-20 lg:mt-3 ">
           
-          <div className="w-full lg:h-[80vh] flex flex-col gap-2 lg:overflow-y-scroll p-3">
-            <div className="w-full flex flex-row gap-2 px-4 md:px-0 "> 
-              <input type="text" placeholder="ketikkan sesuatu" className="w-full text-[12px] shadow-md rounded-md p-2" />
-              <button className="bg-tBlue text-[12px] text-white rounded-md px-3 py-2">Cari</button>
+          <div className="w-full lg:h-[80vh] flex flex-col gap-2 lg:overflow-y-scroll p-3 animate-fade-down">
+          <div className="w-full flex flex-row gap-2 px-4 md:px-0 "> 
+              <input type="text" placeholder="ketikkan sesuatu" className="w-full text-[12px] lg:text-[15px] 2xl:text-[18px] shadow-md rounded-md p-3" />
+              <button className="bg-tBlue text-[12px] lg:text-[15px] 2xl:text-[18px] text-white rounded-md px-3 py-2">Cari</button>
             </div>
             <CardInformasi type={"kalender-card"} 
               status={'terbaru'} 
@@ -36,9 +36,9 @@ const InformasiKalenderAkademik = () => {
             />            
           </div>
           
-            <div className="w-full md:max-w-sm">
-              <h1 className="text-2xl text-tBlue font-bold mb-7">Kalender Akademik</h1>
-              <Calendar className="rounded-lg border-none shadow-lg p-8 font-semibold text-[#485C71]"/>
+            <div className="w-full md:max-w-sm 2xl:max-w-lg animate-fade-left">
+              <h1 className="text-2xl text-tBlue font-bold mb-5">Kalender Akademik</h1>
+              <Calendar className="w-full rounded-lg border-none shadow-lg p-8 font-semibold text-[#485C71]"/>
             </div>
 
           

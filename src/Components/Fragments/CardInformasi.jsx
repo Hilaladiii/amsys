@@ -16,7 +16,7 @@ const CardInformasi = ({type,status,date,title,detail,detail1, detail2, category
 
 const CardDetailInformasi=({information,category, title, date, detail1,detail2,images,views})=>{
   return(
-    <div className="w-full lg:max-w-lg 2xl:max-w-3xl lg:h-[80vh] flex flex-col p-5 shadown-md lg:overflow-y-scroll">
+    <div className="w-full lg:max-w-lg 2xl:max-w-3xl lg:h-[80vh] flex flex-col p-5 shadown-md lg:overflow-y-scroll animate-fade-left">
       <h1 className="text-3xl font-semibold text-tBlue">{information}</h1>
       <div>
         <span className="text-[#D5D5D5] text-[12px] 2xl:text-[15px]">{category}</span>
@@ -80,21 +80,21 @@ const CardInformasiBiaya = ({status, date, semester, biaya, duedate}) =>{
 
 const CardInformasiKalender = () =>{
   return(
-    <div className="w-full lg:max-w-2xl flex flex-col px-5 py-4 gap-2 rounded-md shadow-md">
+    <div className="w-full lg:max-w-2xl 2xl:max-w-3xl flex flex-col px-5 py-4 gap-2 rounded-md shadow-md">
       <div className="flex flex-row gap-3">
-        <div className="w-full max-w-[120px] flex flex-col justify-center items-center bg-tBlue px-4 rounded-xl text-white text-[12px] ">
+        <div className="w-full max-w-[100px] md:max-w-[120px] 2xl:max-w-[170px] flex flex-col justify-center items-center bg-tBlue px-4 rounded-xl text-white text-[12px] 2xl:text-[15px] ">
           <span>Ganjil</span>
           <span>2023/2024</span>
         </div>
-        <h1 className="font-semibold text-[15px]">Registrasi Administrasi bagi mahasiswa lama (pembayaran UKT/SPP)</h1>
+        <h1 className="font-semibold text-[12px] md:text-[15px] 2xl:text-[18px]">Registrasi Administrasi bagi mahasiswa lama (pembayaran UKT/SPP)</h1>
       </div>
 
       <div className="flex flex-row gap-3">
-        <div className="w-full max-w-[120px] flex flex-col justify-center items-center bg-[#2984E42E] rounded-xl text-tBlue text-[12px] ">
+        <div className="w-full max-w-[100px] md:max-w-[120px] 2xl:max-w-[170px] flex flex-col justify-center items-center bg-[#2984E42E] rounded-xl text-tBlue text-[12px] 2xl:text-[15px] ">
           <span>31 Juli 2023</span>
           <span>11 Agustus 2023</span>
         </div>
-        <p className="text-[12px]">Bagi mahasiswa lama dapat registrasi administrasi (pembayaran) UKT/SPP menggunakan no virtual account masing-masing.</p>
+        <p className="text-[10px] md:text-[12px] 2xl:text-[15px]">Bagi mahasiswa lama dapat registrasi administrasi (pembayaran) UKT/SPP menggunakan no virtual account masing-masing.</p>
       </div>
     </div>
   )
