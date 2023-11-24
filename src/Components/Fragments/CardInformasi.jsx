@@ -82,7 +82,7 @@ const CardInformasiKalender = () =>{
   return(
     <div className="w-full lg:max-w-2xl 2xl:max-w-3xl flex flex-col px-5 py-4 gap-2 rounded-md shadow-md">
       <div className="flex flex-row gap-3">
-        <div className="w-full max-w-[100px] md:max-w-[120px] 2xl:max-w-[170px] flex flex-col justify-center items-center bg-tBlue px-4 rounded-xl text-white text-[12px] 2xl:text-[15px] ">
+        <div className="w-full max-w-[100px] md:max-w-[120px] 2xl:max-w-[170px] flex flex-col justify-center items-center bg-tBlue px-4 rounded-xl text-white text-[10px] md:text-[12px] 2xl:text-[15px] ">
           <span>Ganjil</span>
           <span>2023/2024</span>
         </div>
@@ -90,7 +90,7 @@ const CardInformasiKalender = () =>{
       </div>
 
       <div className="flex flex-row gap-3">
-        <div className="w-full max-w-[100px] md:max-w-[120px] 2xl:max-w-[170px] flex flex-col justify-center items-center bg-[#2984E42E] rounded-xl text-tBlue text-[12px] 2xl:text-[15px] ">
+        <div className="w-full max-w-[100px] md:max-w-[120px] 2xl:max-w-[170px] flex flex-col justify-center items-center bg-[#2984E42E] rounded-xl text-tBlue text-[10px] md:text-[12px] 2xl:text-[15px] ">
           <span>31 Juli 2023</span>
           <span>11 Agustus 2023</span>
         </div>
