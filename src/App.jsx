@@ -10,6 +10,7 @@ import InformasiBiayaPage from "./Pages/informasiBiayaPage";
 import InformasiKalenderAkademik from "./Pages/informasiKalenderAkademik";
 import KemahasiswaanPage from "./Pages/kemahasiswaanPage";
 import InformasiPage from "./Pages/informasiPage";
+import KhsEvaluasiPage from "./Pages/khsEvaluasiPage";
 function App() {
 
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<LandingPage />}/>
         <Route path="/dashboard" element={<DashboardPage />}/>
         <Route path="/akademik" element={<AkademikPage />}/>
+        <Route path="/akademik-khs" element={<KhsEvaluasiPage />}/>
         <Route path="/akademik-tugas" element={<TugasPage />}/>
         <Route path="/akademik-jadwal" element={<JadwalPage />}/>
         <Route path="/informasi" element={<InformasiPage />}/>
