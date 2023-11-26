@@ -20,7 +20,7 @@ const InformasiPage = () => {
       <div className=" mt-[29%] md:mt-[14%] lg:mt-[7%] 2xl:mt-[7%] flex flex-col-reverse lg:flex-row py-5 gap-5">
         <NavbarLeft/>        
         <div className="w-full lg:ml-[22%] flex flex-col gap-2 2xl:gap-5 p-4 lg:p-0">
-          <CardAkademik title={'Informasi Terkini'} icons={'icon-terkini.svg'} images={'berita_terkini.png'} navigate={'/informasi-terkini'}/> 
+          <CardAkademik title={'Informasi Terkini'} icons={'icon-terkini.svg'} images={'informasi_terkini.png'} navigate={'/informasi-terkini'}/> 
           <CardAkademik title={'Informasi Biaya Kuliah'} icons={'icon-biaya.svg'} images={'informasi_biaya_kuliah.png'} navigate={'/informasi-biaya'}/> 
           <CardAkademik title={'Informasi Akademik'} icons={'icon-informasiAkademik.svg'} images={'informasi akademik.png'} navigate={'/informasi-akademik'}/> 
           <CardAkademik title={'Informasi Kalender Akademik'} icons={'icon-kalenderAkademik.svg'} images={'kalender_akademik.png'} navigate={'/informasi-kalender'}/> 
