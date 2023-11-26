@@ -36,7 +36,7 @@ const InformasiKalenderAkademik = () => {
             />            
           </div>
           
-            <div className="w-full md:max-w-sm 2xl:max-w-lg animate-fade-left">
+            <div className="w-full mx-auto md:max-w-sm 2xl:max-w-lg justify-center animate-fade-left px-4">
               <h1 className="text-2xl text-tBlue font-bold mb-5">Kalender Akademik</h1>
               <Calendar className="w-full rounded-lg border-none shadow-lg p-8 font-semibold text-[#485C71]"/>
             </div>

@@ -28,10 +28,10 @@ const AuthNavbar = ({onLoginClick, onRegisterClick, handleOpen, isOpen}) =>{
     <>
       <nav className="w-full flex flex-row justify-between p-5 lg:p-10 items-center ">      
           <Link to="/" className="w-[100px] h-[30px] lg:w-[150px] lg:h-[40px] bg-[url('./assets/images/logo.png')] bg-cover animate-fade delay-150"/>
-          <div className="hidden md:flex flex-row gap-5 text-[15px] 2xl:text-[18px]">
-            <Button classname="bg-none text-white focus:text-tBlue focus:bg-white animate-fade-right animate-delay-100" >Kontak</Button>
-            <Button classname="bg-none text-white focus:text-tBlue focus:bg-white animate-fade-right animate-delay-200"  onClick={onLoginClick}>Masuk</Button>
-            <Button classname="bg-none text-white focus:text-tBlue focus:bg-white animate-fade-right animate-delay-300" onClick={onRegisterClick}>Daftar</Button>        
+          <div className="hidden md:flex flex-row gap-5 text-[15px] 2xl:text-[18px] ">
+            <Button classname="bg-none text-white focus:text-tBlue focus:bg-white md:text-tBlue animate-fade-right animate-delay-100" >Kontak</Button>
+            <Button classname="bg-none text-white focus:text-tBlue focus:bg-white md:text-tBlue animate-fade-right animate-delay-200"  onClick={onLoginClick}>Masuk</Button>
+            <Button classname="bg-none text-white focus:text-tBlue focus:bg-white md:text-tBlue animate-fade-right animate-delay-300" onClick={onRegisterClick}>Daftar</Button>        
           </div>
 
           <button onClick={handleOpen} className="md:hidden">          
