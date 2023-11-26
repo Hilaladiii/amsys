@@ -123,7 +123,7 @@ const NavbarTop = ({handleOpen, isOpen}) =>{
             ) :  isOpen && (pathName.includes("/akademik") || pathName.includes("/informasi") || pathName.includes("kemahasiswaan")) ?(
               <div className="w-full p-10 bg-tBlue md:hidden">
                 <div className="w-50% flex flex-col gap-3">
-                  <Button onClick={() => nav("/akademik")}>Akdemik</Button>               
+                  <Button onClick={() => nav("/akademik")}>Akademik</Button>               
                   <Button onClick={() => nav("/kemahasiswaan")}>Kemahasiswaan</Button>               
                   <Button onClick={() => nav("/informasi")}>Informasi</Button>               
                 </div>              

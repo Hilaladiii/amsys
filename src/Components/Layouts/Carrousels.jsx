@@ -4,12 +4,12 @@ const dataIPK = [
   {
     semester:1,
     predikat:'Sangat Baik',
-    ipk:3.89
+    ipk:3.88
   },
   {
     semester:2,
     predikat:'Sangat Baik',
-    ipk:3.90
+    ipk:3.89
   },
   {
     semester:3,

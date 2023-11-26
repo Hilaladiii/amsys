@@ -28,7 +28,7 @@ const AkademikPage = () => {
         <div className="w-full lg:ml-[22%] flex flex-col gap-2 2xl:gap-5 p-4 lg:p-0">
           <CardAkademik title={'Jadwal Kuliah'} icons={'icon-schedule.svg'} images={'akademik-image.png'} navigate={'/akademik-jadwal'}/>           
           <CardAkademik title={'Tugas'} icons={'icon-tugas.svg'} images={'tugas-image.png'} navigate={'/akademik-tugas'}/> 
-          <CardAkademik title={'Kartu Hasil Studi dan Evaluasi'} icons={'icon-KHS.svg'} images={'khs-image.png'}/> 
+          <CardAkademik title={'Kartu Hasil Studi dan Evaluasi'} icons={'icon-KHS.svg'} images={'khs-image.png'} navigate={'/akademik-khs'}/> 
         </div>
         <div className="hidden w-full lg:flex flex-col 2xl:gap-6">
          <CardAbsensi matkul={['IMK','BASIS DATA','METNUM','AI']}/>
