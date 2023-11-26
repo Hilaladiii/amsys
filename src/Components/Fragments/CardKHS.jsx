@@ -1,9 +1,9 @@
 const CardKHS = ({semester,predikat,ipk}) => {
   return (
-    <div className="w-full max-w-xs flex flex-col items-center gap-6 rounded-lg shadow-lg p-7">
+    <div className="w-full max-w-xs 2xl:max-w-xl flex flex-col items-center gap-6 rounded-lg shadow-lg p-7">
       <div className="w-full flex flex-row justify-between">
-        <h1 className="font-semibold text-lg">Semester {semester}</h1>
-        <span className="text-tBlue text-sm italic">{predikat}</span>
+        <h1 className="font-semibold text-lg 2xl:text-xl">Semester {semester}</h1>
+        <span className="text-tBlue text-sm 2xl:text-md italic ">{predikat}</span>
       </div>
       <span className="font-semibold text-4xl text-tBlue">{ipk}</span>
       <div className="flex flex-col items-center gap-1">

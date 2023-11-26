@@ -136,7 +136,7 @@ const NavbarTop = ({handleOpen, isOpen}) =>{
 
 const NavbarLeft = () =>{
   return(
-    <nav className="hidden fixed z-30 top-0 left-0 md:w-[22%] h-screen lg:flex flex-col justify-end gap-3 2xl:gap-6 bg-white shadow-lg text-[15px] px-4 py-4 2xl:p-7 font-medium">
+    <nav className="hidden fixed z-30 top-0 left-0 md:w-[22%] h-screen lg:flex flex-col justify-end gap-5 2xl:gap-8 bg-white shadow-lg text-[15px] px-4 py-4 2xl:p-7 font-medium">
       
       <Link to={"/dashboard"} className="group flex flex-row justify-between items-center hover:bg-[#9F9F9F17] animate-fade-right animate-delay-150">
         <div className="flex flex-row gap-3 p-1 items-center">
@@ -164,15 +164,7 @@ const NavbarLeft = () =>{
               <span className=" text-[14px] 2xl:text-[18px]">Jadwal Kuliah</span>
             </div>
             <div className="w-1 h-8 bg-white group-hover:bg-tBlue"/>
-          </Link>
-
-          <Link className="group w-full flex flex-row justify-between items-center gap-2 hover:bg-[#9F9F9F17]">
-            <div className="flex flex-row gap-2 items-center">
-              <div className="w-[25px] h-[25px] 2xl:w-[35px] 2xl:h-[35px] bg-[url('./assets/icons/icon-IP.svg')] bg-cover bg-center bg-no-repeat"/>            
-              <span className="text-[14px] 2xl:text-[18px]">IP Semester</span>            
-            </div>
-            <div className="w-1 h-8 bg-white group-hover:bg-tBlue"/>
-          </Link>
+          </Link>          
           <Link to={"/akademik-tugas"} className="group w-full flex flex-row justify-between items-center gap-2 hover:bg-[#9F9F9F17]">
             <div className="flex flex-row gap-2 items-center">
               <div className="w-[30px] h-[30px] 2xl:w-[35px] 2xl:h-[35px] bg-[url('./assets/icons/icon-tugas.svg')] bg-cover bg-center bg-no-repeat"/>
@@ -181,7 +173,7 @@ const NavbarLeft = () =>{
             <div className="w-1 h-8 bg-white group-hover:bg-tBlue"/>
           </Link>
 
-          <Link className="group w-full flex flex-row justify-between items-center gap-2 hover:bg-[#9F9F9F17]">
+          <Link to={"/akademik-khs"} className="group w-full flex flex-row justify-between items-center gap-2 hover:bg-[#9F9F9F17]">
             <div className="flex flex-row gap-2 items-center">
               <div className="w-[30px] h-[30px] 2xl:w-[35px] 2xl:h-[35px] bg-[url('./assets/icons/icon-KHS.svg')] bg-cover bg-center bg-no-repeat"/>
               <span className="text-[14px] 2xl:text-[18px]">KHS dan Evaluasi</span>            

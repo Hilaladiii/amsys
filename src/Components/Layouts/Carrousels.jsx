@@ -41,7 +41,7 @@ const dataIPK = [
 
 const Carrousels = () => {
   return (
-    <div className="w-full max-w-[930px] carousel rounded-box gap-4 p-6">
+    <div className="w-full max-w-[930px] 2xl:max-w-[1050px] carousel rounded-box gap-4 p-6 animate-fade-right">
       {
         dataIPK.map((item, index) => (
           <div className="carousel-item" key={index}>

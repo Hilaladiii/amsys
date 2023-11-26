@@ -1,7 +1,7 @@
 
 const TabelNilai = () => {
   return (
-  <table className="w-full max-w-[930px] border-collapse table-auto">
+  <table className="w-full max-w-[930px] 2xl:max-w-[1050px] border-collapse table-auto animate-fade-up 2xl:text-[20px]">
               <thead className="font-semibold bg-[#CBD5E1]">
                 <tr className="text-center">
                   <th>Mata Kuliah</th>
